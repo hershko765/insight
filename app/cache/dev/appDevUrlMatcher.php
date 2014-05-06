@@ -135,6 +135,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // am_manager_default_index
+        if (preg_match('#^/(?P<name>[^/]++)?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'am_manager_default_index')), array (  'name' => 'roee',  '_controller' => 'AM\\ManagerBundle\\Controller\\DefaultController::indexAction',));
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

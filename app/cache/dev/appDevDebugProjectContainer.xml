@@ -16,6 +16,7 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
+      <parameter key="ManagerBundle">AM\ManagerBundle\ManagerBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -25,7 +26,7 @@
     <parameter key="database_driver">pdo_mysql</parameter>
     <parameter key="database_host">127.0.0.1</parameter>
     <parameter key="database_port">null</parameter>
-    <parameter key="database_name">addonManager</parameter>
+    <parameter key="database_name">addons</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">null</parameter>
     <parameter key="mailer_transport">smtp</parameter>
@@ -431,8 +432,8 @@
     <parameter key="assetic.read_from">C:/xampp/htdocs/addonManager/app/../web</parameter>
     <parameter key="assetic.write_to">C:/xampp/htdocs/addonManager/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">C:\Program Files\Java\jdk1.8.0_05\bin\java.EXE</parameter>
-    <parameter key="assetic.node.bin">C:\Program Files (x86)\nodejs\\node.EXE</parameter>
+    <parameter key="assetic.java.bin">c:\Program Files\Java\jdk1.8.0_05\bin\java.EXE</parameter>
+    <parameter key="assetic.node.bin">c:\Program Files (x86)\nodejs\\node.EXE</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -2236,7 +2237,7 @@
         <argument key="driver">pdo_mysql</argument>
         <argument key="host">127.0.0.1</argument>
         <argument key="port">null</argument>
-        <argument key="dbname">addonManager</argument>
+        <argument key="dbname">addons</argument>
         <argument key="user">root</argument>
         <argument key="password">null</argument>
         <argument key="charset">UTF8</argument>
@@ -2696,6 +2697,10 @@
       <call method="addPath">
         <argument>C:\xampp\htdocs\addonManager\vendor\doctrine\doctrine-bundle\Doctrine\Bundle\DoctrineBundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\xampp\htdocs\addonManager\src\AM\ManagerBundle/Resources/views</argument>
+        <argument>Manager</argument>
       </call>
       <call method="addPath">
         <argument>C:\xampp\htdocs\addonManager\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>

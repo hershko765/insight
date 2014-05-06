@@ -1,7 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0a7c1dd-fef6-4b99-9f89-513cbad537a2" name="Default" comment="" />
+    <list default="true" id="a0a7c1dd-fef6-4b99-9f89-513cbad537a2" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#checkAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#finalAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#stepAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#checkOptionalSettings.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#checkRequirements.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#getDriverKeys.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#getDrivers.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#getFormType.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#getTemplate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645#update.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$driver.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$host.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$name.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$password.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$path.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$port.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645$user.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\109cc66a1e264fe55377a0c64aa2830e08e0d645.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#__clone.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#add.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#addError.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#all.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#bind.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#count.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#createView.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#get.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getClickedButton.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getConfig.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getErrors.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getErrorsAsString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getExtraData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getIterator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getNormData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getPropertyPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getRoot.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#getViewData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#handleRequest.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#has.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#initialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isBound.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isDisabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isEmpty.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isRequired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isRoot.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isSubmitted.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isSynchronized.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#isValid.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#modelToNorm.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#normToModel.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#normToView.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#offsetExists.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#offsetGet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#offsetSet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#offsetUnset.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#remove.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#setData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#setParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#submit.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a#viewToNorm.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$children.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$clickedButton.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$config.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$defaultDataSet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$errors.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$extraData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$lockSetData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$modelData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$normData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$parent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$submitted.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$synchronized.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a$viewData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\137636d9a151ece443ec1a0bc45bacf9998ded1a.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#checkOptionalSettings.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#checkRequirements.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#getFormType.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#getTemplate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18#update.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\34d8c6ff4c00b653ddfb06cff20d58eb112fde18.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#checkOptionalSettings.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#checkRequirements.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#generateRandomSecret.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#getFormType.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#getTemplate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf#update.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf$secret.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\3ab5078289aba11a8481fc1b46348359c30f47bf.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\41216fe586c98f51c6ea60da702451a54bd469ed#getIterator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\41216fe586c98f51c6ea60da702451a54bd469ed.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\43b555f9eb0fa2504aebdf7dc2e143b0f703ed31#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\43b555f9eb0fa2504aebdf7dc2e143b0f703ed31.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\653e2382f602883abf6a7d360b3234ca8097ae90#count.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\653e2382f602883abf6a7d360b3234ca8097ae90.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e#helloadminAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e#loginAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e#logoutAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e#securityCheckAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\72114c0f8683bcc2a66ceccb136abe5a78f8577e.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9462534474940c9f1544385e8ba867ef4fbef54a#contactAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9462534474940c9f1544385e8ba867ef4fbef54a#helloAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9462534474940c9f1544385e8ba867ef4fbef54a#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9462534474940c9f1544385e8ba867ef4fbef54a.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#count.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#getIterator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#offsetExists.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#offsetGet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#offsetSet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5#offsetUnset.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5$elements.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5$managedCursors.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5$orderedKeys.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\9991082bb48b927249ca255da54151bbbeeabda5.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b3f2e985db383c94521559410abfe5a507362e26#offsetExists.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b3f2e985db383c94521559410abfe5a507362e26#offsetGet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b3f2e985db383c94521559410abfe5a507362e26#offsetSet.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b3f2e985db383c94521559410abfe5a507362e26#offsetUnset.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b3f2e985db383c94521559410abfe5a507362e26.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\b795f17232474b10e4eb05eb081a307e9d9dfa5d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#add.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#addError.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#all.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#createView.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#get.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getConfig.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getErrors.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getExtraData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getNormData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getPropertyPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getRoot.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#getViewData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#handleRequest.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#has.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#initialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isDisabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isEmpty.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isRequired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isRoot.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isSubmitted.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isSynchronized.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#isValid.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#remove.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#setData.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#setParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#submit.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\0f\8a\408a0f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\69\0e\3d0e69" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\7f\1e\8a1e7f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\7f\3f\073f7f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\96\c8\edc896" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\a4\8e\1d8ea4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b0\06\6006b0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b5\72\f072b5" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b8\ed\75edb8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c1\cb\2dcbc1" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c8\22\8322c8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\d4\3e\623ed4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\de\0b\c90bde" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\de\3c\e23cde" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\02\2c\c57d9998ab07347a284be2981f9df79307f9b4b17dfc68fcc7c326788260.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\1e\72\0000a60d1b98e4dc52685ddcddddd7fe35dcd13ab2c9b8ea51b5f2f2fade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\2e\81\688fd441b1e8f369843e2d46a6c8dacd18ee30bdfee16f51f8db6f04514f.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\32\89\35a666987c2a6040878aac01108daa043ae3dac66b6728b358fb30c55cd5.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\66\0d\a8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7fe33a0.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\72\98\3acd8432c87d23c7114c19b4cb147f71c2f90ddcc55506aaaab57df92812.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\a1\d2\bee646e8ab3b188fb9f82e625596459409f654c4a501274224343420aa41.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\cc\cf\6b89b4090542ca5f313e6eeeb5d42ba6bbdcee5bdc49835a155e8755a6ab.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\f0\99\3adfc23d6dcdcf9d012a649a7bf0a337250b5df37ccf790462914aaca737.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\css\demo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\blue-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\field-background.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-configure.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-quick-tour.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/09/aa/1415df0d67f4f1fdaf70aa6946fbe856233497af0cdb1a911d83c043149d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/09/aa/1415df0d67f4f1fdaf70aa6946fbe856233497af0cdb1a911d83c043149d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d7/8e/280c39d13e27048cd3aa582a4394d84e21d254c9a4d438d40d54628cb5f1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d7/8e/280c39d13e27048cd3aa582a4394d84e21d254c9a4d438d40d54628cb5f1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/64/bf/2b6a809993f3d543c3867a6095eff4d6305db298acca68901b8ab2f78f4b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/64/bf/2b6a809993f3d543c3867a6095eff4d6305db298acca68901b8ab2f78f4b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/15/0c/2de0e463744a70daae89c525d6b4df63e160cb136c23d4ef48dedbc56f40.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/15/0c/2de0e463744a70daae89c525d6b4df63e160cb136c23d4ef48dedbc56f40.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/36/68/4d35fe09fb01ed18115994ccc1bbd66dc99202702337d1454b6be2eb65b0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/36/68/4d35fe09fb01ed18115994ccc1bbd66dc99202702337d1454b6be2eb65b0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/41/f2/8ac13540e946b37f3ead1f2cf36eb6702f6a0826a5f09add369d581fe328.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/41/f2/8ac13540e946b37f3ead1f2cf36eb6702f6a0826a5f09add369d581fe328.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9b/34/9f276c1f0e98f024e893902126c19b17121409925d9ea01ef38321d93159.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9b/34/9f276c1f0e98f024e893902126c19b17121409925d9ea01ef38321d93159.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3f/c4/a18788009fbc2366896e9e31031695ce9114e4086d511ab45de404e91a12.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/3f/c4/a18788009fbc2366896e9e31031695ce9114e4086d511ab45de404e91a12.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/36/a2d8ac52a961dc3ea1f4f7e74c6b6320bfd58a9abbb31a9f8803960f29fc.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f1/36/a2d8ac52a961dc3ea1f4f7e74c6b6320bfd58a9abbb31a9f8803960f29fc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ea/4c/b4f4fd9a284e0de349e314230b9e8a41aae634bcd7b30b10dffa0ea7547c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ea/4c/b4f4fd9a284e0de349e314230b9e8a41aae634bcd7b30b10dffa0ea7547c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c5/73/eca50434fdcdf61b6f888948a8d531c81277a78752deb46a321b85d04fa0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c5/73/eca50434fdcdf61b6f888948a8d531c81277a78752deb46a321b85d04fa0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/93/fc/eed8cbbd50e87976d51b972617bbd1bc4fdfa3f7719cecc7e348a70120f9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/93/fc/eed8cbbd50e87976d51b972617bbd1bc4fdfa3f7719cecc7e348a70120f9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7f/98/fd7fdac29b4981a417d11526c013c53f70a564a6db537107b3840835534c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7f/98/fd7fdac29b4981a417d11526c013c53f70a564a6db537107b3840835534c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="addonManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +240,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="26" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="2348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="console" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/console">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="133" selection-end="133" vertical-scroll-proportion="0.11413044" vertical-offset="0" max-vertical-offset="1004">
+            <state line="18" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42329228" vertical-offset="0" max-vertical-offset="1376">
               <folding />
             </state>
           </provider>
@@ -39,11 +277,16 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/console" />
       </list>
     </option>
@@ -55,7 +298,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -99,6 +342,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -125,24 +410,47 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a0a7c1dd-fef6-4b99-9f89-513cbad537a2" name="Default" comment="" />
       <created>1399372838177</created>
       <updated>1399372838177</updated>
     </task>
+    <task id="LOCAL-00001" summary="updated console file">
+      <created>1399378472174</created>
+      <updated>1399378472174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -169,6 +477,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="updated console file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated console file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -177,20 +487,6 @@
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="-12.727273" vertical-offset="0" max-vertical-offset="1559">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193">
           <folding />
         </state>
       </provider>
@@ -209,9 +505,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console">
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="133" selection-end="133" vertical-scroll-proportion="0.11413044" vertical-offset="0" max-vertical-offset="1004">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.04735062" vertical-offset="0" max-vertical-offset="1139">
+          <folding>
+            <element signature="e#7#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="64888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SymfonyRequirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.14416476" vertical-offset="126" max-vertical-offset="15133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="1265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.6363636" vertical-offset="0" max-vertical-offset="887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/DependencyInjection/ManagerExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="378" selection-end="382" vertical-scroll-proportion="0.21307778" vertical-offset="0" max-vertical-offset="1391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="412" selection-end="871" vertical-scroll-proportion="0.21758737" vertical-offset="17" max-vertical-offset="1454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1487">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/ManagerBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="26" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="2348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42329228" vertical-offset="0" max-vertical-offset="1376">
           <folding />
         </state>
       </provider>

@@ -1,0 +1,5 @@
+manager:
+    resource: "@ManagerBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
