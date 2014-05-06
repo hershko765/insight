@@ -36,6 +36,8 @@
     <parameter key="locale">en</parameter>
     <parameter key="secret">e7a35c72096d699c5a43c07b4fd6422a</parameter>
     <parameter key="database_path">null</parameter>
+    <parameter key="task_manager.class">Core\Base\TaskManager</parameter>
+    <parameter key="task_manager.transport">task_manager</parameter>
     <parameter key="controller_resolver.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver</parameter>
     <parameter key="controller_name_converter.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser</parameter>
     <parameter key="response_listener.class">Symfony\Component\HttpKernel\EventListener\ResponseListener</parameter>
@@ -432,8 +434,8 @@
     <parameter key="assetic.read_from">C:/xampp/htdocs/addonManager/app/../web</parameter>
     <parameter key="assetic.write_to">C:/xampp/htdocs/addonManager/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">c:\Program Files\Java\jdk1.8.0_05\bin\java.EXE</parameter>
-    <parameter key="assetic.node.bin">c:\Program Files (x86)\nodejs\\node.EXE</parameter>
+    <parameter key="assetic.java.bin">C:\Program Files\Java\jdk1.8.0_05\bin\java.EXE</parameter>
+    <parameter key="assetic.node.bin">C:\Program Files (x86)\nodejs\\node.EXE</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -570,6 +572,7 @@
     <parameter key="console.command.ids" type="collection"/>
   </parameters>
   <services>
+    <service id="task_manager" class="Core\Base\TaskManager"/>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -2297,7 +2300,9 @@
       <argument type="service">
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
-            <argument type="collection"/>
+            <argument type="collection">
+              <argument key="AMManagerBundle">AM\ManagerBundle\Entities</argument>
+            </argument>
           </call>
           <call method="setMetadataCacheImpl">
             <argument type="service">
@@ -2328,7 +2333,19 @@
           </call>
           <call method="setMetadataDriverImpl">
             <argument type="service">
-              <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false"/>
+              <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false">
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\Entities</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>AM\ManagerBundle\Entities</argument>
+                </call>
+              </service>
             </argument>
           </call>
           <call method="setProxyDir">

@@ -2,20 +2,24 @@
 
 namespace AM\ManagerBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Core\Base;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class DefaultController extends Controller
+class DefaultController extends Base\Controller
 {
     /**
      * @Route("/{name}")
-     * @Template()
+     * @Template("ManagerBundle:Default:index.html.twig")
      */
     public function indexAction($name = 'roee')
     {
-        return [
-	        'name' => $name
-        ];
+		$b = $this->getTask('addon', 'collect');
+	    $b->setData('bbbb');
+
+
+	    return [
+		    'name' => $name,
+	    ];
     }
 }

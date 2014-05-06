@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a7c1dd-fef6-4b99-9f89-513cbad537a2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Repository/Addon.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Helpers/Arr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Collect.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Base/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Helpers/Date.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Get.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Base/Model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Base/Repository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Interfaces/Task.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core/Base/TaskManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Update.php" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#checkAction.cache.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#finalAction.cache.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\0bc941adfa74495addbae9ede6ba796304caba67#stepAction.cache.php" afterPath="" />
@@ -161,28 +174,41 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062#submit.cache.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\annotations\c0e5dd98c24f42fa3b74981f237a49b1ff62d062.cache.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\0f\8a\408a0f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\4f\4d\db4d4f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\5d\95\b7955d" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\69\0e\3d0e69" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\71\44\a94471" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\73\6d\ac6d73" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\76\45\314576" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\7d\74\52747d" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\7f\1e\8a1e7f" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\7f\3f\073f7f" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\96\c8\edc896" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\9f\7e\5c7e9f" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\a4\8e\1d8ea4" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b0\06\6006b0" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b5\72\f072b5" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\b8\ed\75edb8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\ba\37\8537ba" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c1\cb\2dcbc1" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c5\82\5482c5" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c7\2e\592ec7" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\c8\22\8322c8" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\d4\3e\623ed4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\d5\1d\901dd5" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\dd\bd\12bddd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\dd\f7\a3f7dd" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\de\0b\c90bde" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\de\3c\e23cde" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\02\2c\c57d9998ab07347a284be2981f9df79307f9b4b17dfc68fcc7c326788260.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\1e\72\0000a60d1b98e4dc52685ddcddddd7fe35dcd13ab2c9b8ea51b5f2f2fade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\2e\81\688fd441b1e8f369843e2d46a6c8dacd18ee30bdfee16f51f8db6f04514f.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\e7\1d\7c1de7" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\e8\70\7570e8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\f7\9d\919df7" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\profiler\f9\b8\8db8f9" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\32\89\35a666987c2a6040878aac01108daa043ae3dac66b6728b358fb30c55cd5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\66\0d\a8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7fe33a0.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\72\98\3acd8432c87d23c7114c19b4cb147f71c2f90ddcc55506aaaab57df92812.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\a1\d2\bee646e8ab3b188fb9f82e625596459409f654c4a501274224343420aa41.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\cc\cf\6b89b4090542ca5f313e6eeeb5d42ba6bbdcee5bdc49835a155e8755a6ab.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\app\cache\dev\twig\f0\99\3adfc23d6dcdcf9d012a649a7bf0a337250b5df37ccf790462914aaca737.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\DependencyInjection\Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\DependencyInjection\ManagerExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\Tests\Controller\DefaultControllerTest.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\css\demo.css" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\blue-arrow.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\field-background.gif" afterPath="" />
@@ -191,32 +217,30 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-configure.gif" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-demo.gif" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\addonManager\web\bundles\acmedemo\images\welcome-quick-tour.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/09/aa/1415df0d67f4f1fdaf70aa6946fbe856233497af0cdb1a911d83c043149d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/09/aa/1415df0d67f4f1fdaf70aa6946fbe856233497af0cdb1a911d83c043149d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d7/8e/280c39d13e27048cd3aa582a4394d84e21d254c9a4d438d40d54628cb5f1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d7/8e/280c39d13e27048cd3aa582a4394d84e21d254c9a4d438d40d54628cb5f1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/64/bf/2b6a809993f3d543c3867a6095eff4d6305db298acca68901b8ab2f78f4b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/64/bf/2b6a809993f3d543c3867a6095eff4d6305db298acca68901b8ab2f78f4b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/15/0c/2de0e463744a70daae89c525d6b4df63e160cb136c23d4ef48dedbc56f40.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/15/0c/2de0e463744a70daae89c525d6b4df63e160cb136c23d4ef48dedbc56f40.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/36/68/4d35fe09fb01ed18115994ccc1bbd66dc99202702337d1454b6be2eb65b0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/36/68/4d35fe09fb01ed18115994ccc1bbd66dc99202702337d1454b6be2eb65b0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/41/f2/8ac13540e946b37f3ead1f2cf36eb6702f6a0826a5f09add369d581fe328.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/41/f2/8ac13540e946b37f3ead1f2cf36eb6702f6a0826a5f09add369d581fe328.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9b/34/9f276c1f0e98f024e893902126c19b17121409925d9ea01ef38321d93159.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9b/34/9f276c1f0e98f024e893902126c19b17121409925d9ea01ef38321d93159.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3f/c4/a18788009fbc2366896e9e31031695ce9114e4086d511ab45de404e91a12.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/3f/c4/a18788009fbc2366896e9e31031695ce9114e4086d511ab45de404e91a12.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1e/72/0000a60d1b98e4dc52685ddcddddd7fe35dcd13ab2c9b8ea51b5f2f2fade.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1e/72/0000a60d1b98e4dc52685ddcddddd7fe35dcd13ab2c9b8ea51b5f2f2fade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/141699eaa7f739bd981257fd35fa730944cc905f#indexAction.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/141699eaa7f739bd981257fd35fa730944cc905f#indexAction.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/72/98/3acd8432c87d23c7114c19b4cb147f71c2f90ddcc55506aaaab57df92812.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/72/98/3acd8432c87d23c7114c19b4cb147f71c2f90ddcc55506aaaab57df92812.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2e/81/688fd441b1e8f369843e2d46a6c8dacd18ee30bdfee16f51f8db6f04514f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2e/81/688fd441b1e8f369843e2d46a6c8dacd18ee30bdfee16f51f8db6f04514f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/cc/cf/6b89b4090542ca5f313e6eeeb5d42ba6bbdcee5bdc49835a155e8755a6ab.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/cc/cf/6b89b4090542ca5f313e6eeeb5d42ba6bbdcee5bdc49835a155e8755a6ab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/36/a2d8ac52a961dc3ea1f4f7e74c6b6320bfd58a9abbb31a9f8803960f29fc.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f1/36/a2d8ac52a961dc3ea1f4f7e74c6b6320bfd58a9abbb31a9f8803960f29fc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/66/0d/a8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7fe33a0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/66/0d/a8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7fe33a0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ea/4c/b4f4fd9a284e0de349e314230b9e8a41aae634bcd7b30b10dffa0ea7547c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ea/4c/b4f4fd9a284e0de349e314230b9e8a41aae634bcd7b30b10dffa0ea7547c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a1/d2/bee646e8ab3b188fb9f82e625596459409f654c4a501274224343420aa41.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a1/d2/bee646e8ab3b188fb9f82e625596459409f654c4a501274224343420aa41.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/02/2c/c57d9998ab07347a284be2981f9df79307f9b4b17dfc68fcc7c326788260.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/02/2c/c57d9998ab07347a284be2981f9df79307f9b4b17dfc68fcc7c326788260.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console" afterPath="$PROJECT_DIR$/console" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c5/73/eca50434fdcdf61b6f888948a8d531c81277a78752deb46a321b85d04fa0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c5/73/eca50434fdcdf61b6f888948a8d531c81277a78752deb46a321b85d04fa0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/93/fc/eed8cbbd50e87976d51b972617bbd1bc4fdfa3f7719cecc7e348a70120f9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/93/fc/eed8cbbd50e87976d51b972617bbd1bc4fdfa3f7719cecc7e348a70120f9.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7f/98/fd7fdac29b4981a417d11526c013c53f70a564a6db537107b3840835534c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7f/98/fd7fdac29b4981a417d11526c013c53f70a564a6db537107b3840835534c.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="addonManager.iws" />
@@ -240,32 +264,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="Collect.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Collect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="26" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="2348">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/console">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42329228" vertical-offset="0" max-vertical-offset="1376">
-              <folding />
+            <state line="20" column="1" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4735062" vertical-offset="0" max-vertical-offset="1286">
+              <folding>
+                <element signature="e#57#83#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -285,9 +290,26 @@
       <list>
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
-        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/console" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Entity/Addon.php" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Resources/config/Addon.orm.yml" />
+        <option value="$PROJECT_DIR$/web/app.php" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Model/Addon.php" />
+        <option value="$PROJECT_DIR$/src/AM/Core/Base/Repository.php" />
+        <option value="$PROJECT_DIR$/src/AM/Core/Helpers/Date.php" />
+        <option value="$PROJECT_DIR$/src/AM/Core/Helpers/Arr.php" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Repository/Addon.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Core/Base/Repository.php" />
+        <option value="$PROJECT_DIR$/src/Core/Helpers/Arr.php" />
+        <option value="$PROJECT_DIR$/src/Core/Base/TaskManager.php" />
+        <option value="$PROJECT_DIR$/src/Core/Interface/Task.php" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Collect.php" />
+        <option value="$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Core/Base/Controller.php" />
       </list>
     </option>
   </component>
@@ -352,7 +374,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,6 +391,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagerBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -380,7 +410,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagerBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Addon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addonManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagerBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,6 +468,19 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\addonManager\src\AM\Core\Helpers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\Entities\Task\Addon" />
+      <recent name="C:\xampp\htdocs\addonManager\src" />
+      <recent name="C:\xampp\htdocs\addonManager\src\AM" />
+      <recent name="C:\xampp\htdocs\addonManager\src\AM\ManagerBundle\Entities\Model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -442,28 +531,50 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -484,147 +595,203 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Collect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="-12.727273" vertical-offset="0" max-vertical-offset="1559">
-          <folding />
+        <state line="8" column="26" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="273">
+          <folding>
+            <element signature="e#57#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.43369564" vertical-offset="0" max-vertical-offset="1697">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.43369564" vertical-offset="0" max-vertical-offset="1697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1991">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.04735062" vertical-offset="0" max-vertical-offset="1139">
-          <folding>
-            <element signature="e#7#58#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1991" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="64888" />
+      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="64888">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/console">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1466">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1466" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1235">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SymfonyRequirements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.14416476" vertical-offset="126" max-vertical-offset="15133">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1424">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1424" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="587" selection-end="587" vertical-scroll-proportion="0.6349384" vertical-offset="0" max-vertical-offset="1439" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="660" selection-end="683" vertical-scroll-proportion="0.3880435" vertical-offset="0" max-vertical-offset="1319" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="415" column="23" selection-start="11227" selection-end="11230" vertical-scroll-proportion="-5.8998823" vertical-offset="13157" max-vertical-offset="17229" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1655">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1655" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="1265">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/apple-touch-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.667048" vertical-offset="2331" max-vertical-offset="3457" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="407" selection-end="407" vertical-scroll-proportion="-7.6363635" vertical-offset="0" max-vertical-offset="1580" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.04735062" vertical-offset="0" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SymfonyRequirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="15133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="10" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.5490417" vertical-offset="17" max-vertical-offset="1454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.02367531" vertical-offset="0" max-vertical-offset="1433" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Base/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
+      </provider>
+    </entry>
+    <entry file="file://D:/www/tit/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="66" selection-start="5771" selection-end="5771" vertical-scroll-proportion="2.2254791" vertical-offset="441" max-vertical-offset="19577" />
+      </provider>
+    </entry>
+    <entry file="file://D:/www/tit/Arr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="7" selection-start="2011" selection-end="2011" vertical-scroll-proportion="-3.7170236" vertical-offset="3528" max-vertical-offset="12143" />
+      </provider>
+    </entry>
+    <entry file="file://D:/www/tit/Cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2168" selection-end="2168" vertical-scroll-proportion="-0.7812852" vertical-offset="1071" max-vertical-offset="4079" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Helpers/Date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="43" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.37880495" vertical-offset="0" max-vertical-offset="11912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Model/Addon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.2604284" vertical-offset="0" max-vertical-offset="2819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1130">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.6363636" vertical-offset="0" max-vertical-offset="887">
+        <state line="0" column="13" selection-start="9" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="887">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/DependencyInjection/ManagerExtension.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="378" selection-end="382" vertical-scroll-proportion="0.21307778" vertical-offset="0" max-vertical-offset="1391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="412" selection-end="871" vertical-scroll-proportion="0.21758737" vertical-offset="17" max-vertical-offset="1454">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1319">
+        <state line="82" column="16" selection-start="2367" selection-end="2379" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2663">
           <folding />
         </state>
       </provider>
@@ -636,27 +803,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1193">
+        <state line="53" column="14" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.33253872" vertical-offset="351" max-vertical-offset="6761">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/Core/Base/Repository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="26" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="2348">
+        <state line="10" column="11" selection-start="194" selection-end="194" vertical-scroll-proportion="-5.7272725" vertical-offset="21" max-vertical-offset="764">
+          <folding>
+            <element signature="e#28#78#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/Request/ParamConverter/DoctrineParamConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="773" selection-end="773" vertical-scroll-proportion="0.97402596" vertical-offset="0" max-vertical-offset="4928">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Command/Proxy/DoctrineCommandHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42329228" vertical-offset="0" max-vertical-offset="1376">
+        <state line="46" column="35" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.45659527" vertical-offset="309" max-vertical-offset="1769">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Repository/Addon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.1818182" vertical-offset="0" max-vertical-offset="1034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="46" selection-start="6774" selection-end="6782" vertical-scroll-proportion="0.47911832" vertical-offset="3514" max-vertical-offset="5881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="9" selection-start="4380" selection-end="4380" vertical-scroll-proportion="0.3449831" vertical-offset="2697" max-vertical-offset="11408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Helpers/Arr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="88" selection-start="3817" selection-end="3817" vertical-scroll-proportion="0.5445321" vertical-offset="945" max-vertical-offset="12479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Base/TaskManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="1286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Interfaces/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="1" selection-start="82" selection-end="82" vertical-scroll-proportion="-4.4545455" vertical-offset="0" max-vertical-offset="1013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Base/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="9" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.9470124" vertical-offset="315" max-vertical-offset="2819">
+          <folding>
+            <element signature="e#29#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.40248027" vertical-offset="0" max-vertical-offset="1349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AM/ManagerBundle/Entities/Task/Addon/Collect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4735062" vertical-offset="0" max-vertical-offset="1286">
+          <folding>
+            <element signature="e#57#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
