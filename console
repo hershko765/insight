@@ -1,0 +1,6 @@
+## Usefull console commands
+
+#Set Default pull branch
+	git branch --set-upstream-to=origin/<remove> <local>
+
+#Set Default push branch
