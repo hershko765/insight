@@ -1,6 +1,25 @@
 ## Usefull console commands
 
+---------- Git Bash Commands ----------
 #Set Default pull branch
 	git branch --set-upstream-to=origin/<remove> <local>
 
 #Set Default push branch
+	git config --global push.default upstream
+
+---------- Symfony Commands ----------
+# Run Server
+	php app/console server:run
+
+# Create Bundle
+	php app/console generate:bundle
+
+# Commands List
+	php app/console
+
+---------- Doctorine ------------
+# Create Database
+	php app/console doctrine:database:create
+
+# Drop Database
+	php app/console doctrine:database:drop --force
