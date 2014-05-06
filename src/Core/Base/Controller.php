@@ -26,7 +26,7 @@ class Controller extends FrameworkBundle\Controller\Controller {
 	 * @param $entity
 	 * @param $task
 	 * @return object
-	 * @throws \Symfony\Component\Config\Definition\Exception\Exception
+	 * @throws Exception
 	 */
 	protected function getTask($entity, $task, $bundle = FALSE)
 	{
