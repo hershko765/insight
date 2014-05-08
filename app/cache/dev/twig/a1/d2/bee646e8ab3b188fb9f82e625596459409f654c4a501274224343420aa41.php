@@ -20,22 +20,22 @@ class __TwigTemplate_a1d2bee646e8ab3b188fb9f82e625596459409f654c4a50127422434342
     ";
         // line 2
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["count"]) ? $context["count"] : null)));
+        $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["count"]) ? $context["count"] : $this->getContext($context, "count"))));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
             // line 3
             echo "
       ";
             // line 4
-            if (((isset($context["i"]) ? $context["i"] : null) == ((isset($context["index"]) ? $context["index"] : null) + 1))) {
+            if (((isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")) == ((isset($context["index"]) ? $context["index"] : $this->getContext($context, "index")) + 1))) {
                 // line 5
                 echo "          <span class=\"selected\">Step ";
-                echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : null), "html", null, true);
+                echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
                 echo "</span>
       ";
             } else {
                 // line 7
                 echo "          <span>Step ";
-                echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : null), "html", null, true);
+                echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
                 echo "</span>
       ";
             }
@@ -43,7 +43,7 @@ class __TwigTemplate_a1d2bee646e8ab3b188fb9f82e625596459409f654c4a50127422434342
             echo "
       ";
             // line 10
-            if (((isset($context["i"]) ? $context["i"] : null) != (isset($context["count"]) ? $context["count"] : null))) {
+            if (((isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")) != (isset($context["count"]) ? $context["count"] : $this->getContext($context, "count")))) {
                 // line 11
                 echo "        &gt;
       ";

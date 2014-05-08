@@ -21,9 +21,9 @@ class __TwigTemplate_b0ac08cfccffa4064b640b5d7108d2b908b311bdd4f97c18ba32fd54cc0
 
 The server returned a \"";
         // line 4
-        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code")), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")), "html", null, true);
         echo "\".
 
 Please e-mail us at [email] and let us know what you were doing when this

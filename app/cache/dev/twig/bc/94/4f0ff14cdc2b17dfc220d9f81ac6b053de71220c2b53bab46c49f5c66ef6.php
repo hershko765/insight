@@ -22,16 +22,16 @@ class __TwigTemplate_bc944f0ff14cdc2b17dfc220d9f81ac6b053de71220c2b53bab46c49f5c
         <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
         <title>An Error Occurred: ";
         // line 5
-        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")), "html", null, true);
         echo "</title>
     </head>
     <body>
         <h1>Oops! An Error Occurred</h1>
         <h2>The server returned a \"";
         // line 9
-        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code")), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")), "html", null, true);
         echo "\".</h2>
 
         <div>

@@ -2,7 +2,6 @@
 
 namespace AM\ManagerBundle\Entities\Task\Addon;
 
-
 use Core\Base\TaskManager;
 use Core\Interfaces\Task;
 use Doctrine\Bundle\DoctrineBundle\Registry;
@@ -15,7 +14,24 @@ class Collect extends TaskManager implements Task {
 	 */
 	protected $em;
 
-	public function setData() {}
-	public function execute() {}
+	/**
+	 * Outsource data
+	 * @var array
+	 */
+	protected $filters, $paging, $settings;
+
+	public function setData(array $filters = [], array $paging = [], array $settings = [])
+	{
+		$this->filters  = $filters;
+		$this->paging   = $paging;
+		$this->settings = $settings;
+
+		return $this;
+	}
+
+	public function execute()
+	{
+		return $this->em->getRepository('AMManagerBundle:Model\Addon')->collect($this->filters, $this->paging, $this->settings);
+	}
 }
  

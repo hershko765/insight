@@ -66,34 +66,34 @@ class __TwigTemplate_3ff177478d1176c5a838b61467d6e370318393f6167aebfe36965796565
     {
         // line 12
         echo "                            ";
-        if (((isset($context["about"]) ? $context["about"] : null) == "purge")) {
+        if (((isset($context["about"]) ? $context["about"] : $this->getContext($context, "about")) == "purge")) {
             // line 13
             echo "                                <h2>The profiler database was purged successfully</h2>
                                 <p>
                                     <em>Now you need to browse some pages with the Symfony Profiler enabled to collect data.</em>
                                 </p>
                             ";
-        } elseif (((isset($context["about"]) ? $context["about"] : null) == "upload_error")) {
+        } elseif (((isset($context["about"]) ? $context["about"] : $this->getContext($context, "about")) == "upload_error")) {
             // line 18
             echo "                                <h2>A problem occurred when uploading the data</h2>
                                 <p>
                                     <em>No file given or the file was not uploaded successfully.</em>
                                 </p>
                             ";
-        } elseif (((isset($context["about"]) ? $context["about"] : null) == "already_exists")) {
+        } elseif (((isset($context["about"]) ? $context["about"] : $this->getContext($context, "about")) == "already_exists")) {
             // line 23
             echo "                                <h2>A problem occurred when uploading the data</h2>
                                 <p>
                                     <em>The token already exists in the database.</em>
                                 </p>
                             ";
-        } elseif (((isset($context["about"]) ? $context["about"] : null) == "no_token")) {
+        } elseif (((isset($context["about"]) ? $context["about"] : $this->getContext($context, "about")) == "no_token")) {
             // line 28
             echo "                                <h2>Token not found</h2>
                                 <p>
                                     <em>Token \"";
             // line 30
-            echo twig_escape_filter($this->env, (isset($context["token"]) ? $context["token"] : null), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "html", null, true);
             echo "\" was not found in the database.</em>
                                 </p>
                             ";

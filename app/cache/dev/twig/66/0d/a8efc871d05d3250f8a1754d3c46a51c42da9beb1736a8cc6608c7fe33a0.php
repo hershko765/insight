@@ -33,17 +33,17 @@ class __TwigTemplate_660da8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7f
         echo "    <div class=\"symfony-form-errors\">
         ";
         // line 5
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'errors');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
         echo "
     </div>
     ";
         // line 7
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["form"]) ? $context["form"] : null));
+        $context['_seq'] = twig_ensure_traversable((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")));
         foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
             // line 8
             echo "        ";
-            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["child"]) ? $context["child"] : null), 'row');
+            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["child"]) ? $context["child"] : $this->getContext($context, "child")), 'row');
             echo "
     ";
         }
@@ -59,17 +59,17 @@ class __TwigTemplate_660da8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7f
         echo "    <div class=\"symfony-form-row\">
         ";
         // line 14
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'label');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'label');
         echo "
         <div class=\"symfony-form-field\">
             ";
         // line 16
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'widget');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
             <div class=\"symfony-form-errors\">
                 ";
         // line 18
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'errors');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
         echo "
             </div>
         </div>
@@ -82,24 +82,24 @@ class __TwigTemplate_660da8efc871d05d3250f8a1754d3c46a51c42da9beb1736a8cc6608c7f
     {
         // line 25
         echo "    ";
-        if (twig_test_empty((isset($context["label"]) ? $context["label"] : null))) {
+        if (twig_test_empty((isset($context["label"]) ? $context["label"] : $this->getContext($context, "label")))) {
             // line 26
             echo "        ";
-            $context["label"] = call_user_func_array($this->env->getFilter('humanize')->getCallable(), array((isset($context["name"]) ? $context["name"] : null)));
+            $context["label"] = call_user_func_array($this->env->getFilter('humanize')->getCallable(), array((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name"))));
             // line 27
             echo "    ";
         }
         // line 28
         echo "    <label for=\"";
-        echo twig_escape_filter($this->env, (isset($context["id"]) ? $context["id"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")), "html", null, true);
         echo "\">
         ";
         // line 29
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans((isset($context["label"]) ? $context["label"] : null)), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans((isset($context["label"]) ? $context["label"] : $this->getContext($context, "label"))), "html", null, true);
         echo "
         ";
         // line 30
-        if ((isset($context["required"]) ? $context["required"] : null)) {
+        if ((isset($context["required"]) ? $context["required"] : $this->getContext($context, "required"))) {
             // line 31
             echo "            <span class=\"symfony-form-required\" title=\"This field is required\">*</span>
         ";

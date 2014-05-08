@@ -19,7 +19,7 @@ class __TwigTemplate_734acab151aa178d9f1343ec61fcdc23c8f37c2e650eccb5db63dcc6989
         echo "<table ";
         if (array_key_exists("class", $context)) {
             echo "class='";
-            echo twig_escape_filter($this->env, (isset($context["class"]) ? $context["class"] : null), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "html", null, true);
             echo "'";
         }
         echo " >
@@ -33,18 +33,18 @@ class __TwigTemplate_734acab151aa178d9f1343ec61fcdc23c8f37c2e650eccb5db63dcc6989
         ";
         // line 9
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable(twig_sort_filter(twig_get_array_keys_filter((isset($context["data"]) ? $context["data"] : null))));
+        $context['_seq'] = twig_ensure_traversable(twig_sort_filter(twig_get_array_keys_filter((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")))));
         foreach ($context['_seq'] as $context["_key"] => $context["key"]) {
             // line 10
             echo "            <tr>
                 <th>";
             // line 11
-            echo twig_escape_filter($this->env, (isset($context["key"]) ? $context["key"] : null), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["key"]) ? $context["key"] : $this->getContext($context, "key")), "html", null, true);
             echo "</th>
                 ";
             // line 13
             echo "                <td>";
-            echo twig_escape_filter($this->env, twig_jsonencode_filter($this->getAttribute((isset($context["data"]) ? $context["data"] : null), (isset($context["key"]) ? $context["key"] : null), array(), "array"), (64 | 256)), "html", null, true);
+            echo twig_escape_filter($this->env, twig_jsonencode_filter($this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), (isset($context["key"]) ? $context["key"] : $this->getContext($context, "key")), array(), "array"), (64 | 256)), "html", null, true);
             echo "</td>
             </tr>
         ";

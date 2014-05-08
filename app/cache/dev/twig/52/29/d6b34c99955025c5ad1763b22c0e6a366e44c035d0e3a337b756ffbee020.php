@@ -22,24 +22,24 @@ class __TwigTemplate_5229d6b34c99955025c5ad1763b22c0e6a366e44c035d0e3a337b756ffb
 
 <error code=\"";
         // line 3
-        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code")), "html", null, true);
         echo "\" message=\"";
-        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : null), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")), "html", null, true);
         echo "\">
 ";
         // line 4
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["exception"]) ? $context["exception"] : null), "toarray"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["exception"]) ? $context["exception"] : $this->getContext($context, "exception")), "toarray"));
         foreach ($context['_seq'] as $context["_key"] => $context["e"]) {
             // line 5
             echo "    <exception class=\"";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : null), "class"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : $this->getContext($context, "e")), "class"), "html", null, true);
             echo "\" message=\"";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : null), "message"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["e"]) ? $context["e"] : $this->getContext($context, "e")), "message"), "html", null, true);
             echo "\">
 ";
             // line 6
-            $this->env->loadTemplate("TwigBundle:Exception:traces.xml.twig")->display(array("exception" => (isset($context["e"]) ? $context["e"] : null)));
+            $this->env->loadTemplate("TwigBundle:Exception:traces.xml.twig")->display(array("exception" => (isset($context["e"]) ? $context["e"] : $this->getContext($context, "e"))));
             // line 7
             echo "    </exception>
 ";
