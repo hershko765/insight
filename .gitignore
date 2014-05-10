@@ -1,5 +1,5 @@
 .idea
 app/cache
 app/logs
-src/Core/Logs/*
+src/App/SourceBundle/Logs/*
 vendor/*

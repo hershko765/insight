@@ -60,12 +60,12 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
         mappings:
-             AM:
+             App:
                 type:       annotation
                 is_bundle:  false
-                dir:        %kernel.root_dir%/../src/AM/ManagerBundle/Entities
-                prefix:     AM\ManagerBundle\Entities
-                alias:      AMManagerBundle
+                dir:        %kernel.root_dir%/../src/App/ManagerBundle/Entities
+                prefix:     App\ManagerBundle\Entities
+                alias:      AppManagerBundle
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -77,5 +77,5 @@ swiftmailer:
 
 services:
     task_gateway:
-        class:        Core\Base\TaskGateway
+        class:        App\SourceBundle\Base\TaskGateway
         arguments: ['@service_container']
