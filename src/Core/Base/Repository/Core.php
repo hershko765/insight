@@ -98,7 +98,6 @@ abstract class Core extends EntityRepository {
 			list($page, $perPage) = $paging['page'];
 			$paging['limit'] = $perPage;
 			$paging['offset'] = ($page != 0 ? $page - 1 : 1) * $perPage;
-			$paging['offset'] = ($page != 0 ? $page - 1 : 1) * $perPage;
 		}
 
 		// Add limit if given

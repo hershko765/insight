@@ -75,10 +75,7 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-parameters:
-    task_manager.class:     Core\Base\TaskManager
-    task_manager.transport: task_manager
-
 services:
-    task_manager:
-        class:        "%task_manager.class%"
+    task_gateway:
+        class:        Core\Base\TaskGateway
+        arguments: ['@service_container']

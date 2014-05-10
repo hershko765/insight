@@ -7,16 +7,23 @@ use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Core\Helpers\Arr;
 
-class TaskGateway extends FrameworkBundle\Controller\Controller {
+class TaskGateway {
 
 	/**
 	 * @var \Symfony\Component\DependencyInjection\ContainerBuilder
 	 */
 	private $task_container;
+	private $container;
 
-	public function __construct()
+	public function __construct($container)
 	{
+		$this->container = $container;
 		$this->task_container =  new ContainerBuilder();
+	}
+
+	public function registerContainer()
+	{
+
 	}
 
 	/**
@@ -28,18 +35,8 @@ class TaskGateway extends FrameworkBundle\Controller\Controller {
 	 * @throws Exception
 	 * @return TaskManager object
 	 */
-	protected function getTask($entity, $task, $bundle = FALSE)
+	public function getTask($entity, $task, $bundle = FALSE)
 	{
-		// If bundle wasn't provided, trying to extract the name by the called controller
-		if ( ! $bundle)
-		{
-			preg_match('/(?<BUNDLE>[\w]+)Bundle/', get_called_class(), $match);
-			if ( ! Arr::get($match, 'BUNDLE'))
-				throw new Exception('Could not extract bundle name, you should provide it in this case');
-
-			$bundle = Arr::get($match, 'BUNDLE');
-		}
-
 		// Creating class alias for task container
 		$task_alias = strtolower($bundle).'_'.strtolower($entity).'_'.strtolower($task);
 		// Get task class name
