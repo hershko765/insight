@@ -3,4 +3,4 @@ Addon-Manager
 
 Addon Manager
 
-Simple Workstation fpr symfony and backbone & Marioneete
+Simple Workstation for symfony
