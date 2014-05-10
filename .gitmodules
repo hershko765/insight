@@ -1,0 +1,3 @@
+[submodule "src/App/SourceBundle"]
+	path = src/App/SourceBundle
+	url = git@github.com:hershko765/Symfony-SourceBundle.git
