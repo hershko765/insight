@@ -4,7 +4,7 @@ namespace Core\Base;
 
 use Core\Helpers\Arr;
 
-class TaskManager {
+abstract class TaskManager {
 
 	/**
 	 * Inject dependencies into class properties
@@ -18,4 +18,40 @@ class TaskManager {
 			$this->{$DIClass} = Arr::get($args, $key);
 		}
 	}
+
+	/**
+	 * Convert Validator object to array
+	 * @param $errors
+	 * @return array
+	 */
+	protected function errorsToArr($errors)
+	{
+		$errorArr = [];
+		foreach ($errors as $error)
+		{
+			$errorArr[$error->getPropertyPath()] = $error->getMessage();
+		}
+
+		return $errorArr;
+	}
+
+	public function setFilters($filters)
+	{
+		$this->filters = $filters;
+		return $this;
+	}
+
+	public function setSettings($settings)
+	{
+		$this->settings = $settings;
+		return $this;
+	}
+
+	public function setPaging($paging)
+	{
+		$this->paging = $paging;
+		return $this;
+	}
+
+	abstract function execute();
 }

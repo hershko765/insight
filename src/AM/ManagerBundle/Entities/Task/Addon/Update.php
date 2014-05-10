@@ -1,12 +1,69 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-/**
- * ****DESCRIPTION OF FILE****
- *
- * @package    Sortex
- * @author     Sortex Systems Development Ltd.
- * @copyright  (c) 2011-2013 Sortex
- * @license    BSD
- * @link       http://www.sortex.co.il
- */
- 
+namespace AM\ManagerBundle\Entities\Task\Addon;
+
+use Core\Base\Repository\Repository;
+use Core\Base\TaskManager;
+use Core\Interfaces\Task;
+use Doctrine\Bundle\DoctrineBundle\Registry;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Validator\Validator;
+
+class Update extends TaskManager implements Task {
+
+	/**
+	 * @var Registry
+	 * @DI (alias=doctrine)
+	 */
+	protected $em;
+
+	/**
+	 * @var Validator
+	 * @DI (alias=validator)
+	 */
+	protected $validate;
+
+	/**
+	 * data to update
+	 * @var array
+	 */
+	protected $data, $id;
+
+	public function setData(array $data, $id)
+	{
+		$this->data = $data;
+		$this->id = $id;
+		return $this;
+	}
+
+	public function execute()
+	{
+		// Get repository and filter data to contain only allowed data
+		$repo = $this->em->getRepository('AMManagerBundle:Model\Addon');
+		$repo->convert($this->data, Repository::PERM_UPDATE);
+
+		// Load model by id, throw exception if nothing found
+		$addon = $repo->find($this->id);
+		if ( ! $addon)
+			throw new NotFoundHttpException('Addon not found for id: '.$this->id);
+
+		// Inject values
+		$addon->setValues($this->data);
+
+		// Validate model, if errors found return them
+		$errors = $this->validate->validate($addon);
+		if(count($errors) > 0)
+		{
+			return [
+				'status' => FALSE,
+				'errors' => $this->errorsToArr($errors)
+			];
+		}
+
+		// Save model into the database and return response
+		return [
+			'status' => TRUE,
+			'data_array' => $repo->save($addon)
+		];
+	}
+}

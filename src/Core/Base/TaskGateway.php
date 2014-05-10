@@ -25,8 +25,8 @@ class TaskGateway extends FrameworkBundle\Controller\Controller {
 	 * @param $bundle
 	 * @param $entity
 	 * @param $task
-	 * @return object
 	 * @throws Exception
+	 * @return TaskManager object
 	 */
 	protected function getTask($entity, $task, $bundle = FALSE)
 	{

@@ -18,7 +18,9 @@ class Collect extends TaskManager implements Task {
 	 * Outsource data
 	 * @var array
 	 */
-	protected $filters, $paging, $settings;
+	protected $filters  = [];
+	protected $paging   = [];
+	protected $settings = [];
 
 	public function setData(array $filters = [], array $paging = [], array $settings = [])
 	{

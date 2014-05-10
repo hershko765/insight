@@ -2,7 +2,9 @@
 
 namespace AM\ManagerBundle\Entities\Model;
 
+use Core\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * AM\ManagerBundle\Entities\Model\Addon
@@ -10,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="addons")
  * @ORM\Entity(repositoryClass="AM\ManagerBundle\Entities\Repository\Addon")
  */
-class Addon
+class Addon extends Model
 {
     /**
      * @var integer
@@ -24,6 +26,7 @@ class Addon
 	/**
 	 * @var string
 	 *
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=255)
 	 */
 	private $addon;
@@ -31,6 +34,7 @@ class Addon
 	/**
 	 * @var string
 	 *
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="text")
 	 */
 	private $description;

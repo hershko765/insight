@@ -14,10 +14,6 @@ class DefaultController extends Base\Controller
      */
     public function indexAction($name = 'roee')
     {
-		$addonCollect = $this->getTask('addon', 'collect')
-			->setData( [ 'select' => [ 'id', 'addon' ] ] )
-			->execute();
-
 	    return [
 		    'name' => $name,
 	    ];

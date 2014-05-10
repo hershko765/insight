@@ -2,6 +2,7 @@
 namespace AM\ManagerBundle\Entities\Repository;
 
 use Core\Base\Repository\Repository;
+use Doctrine\ORM\QueryBuilder;
 
 class Addon extends Repository {
 
@@ -14,7 +15,7 @@ class Addon extends Repository {
 	 * @var array
 	 */
 	protected $filterMap = [
-		[ 'addonFilter', 'addon', 'BETWEEN' ]
+		[ 'addonFilter', 'addon', 'LIKE' ],
 	];
 
 	/**
@@ -22,9 +23,8 @@ class Addon extends Repository {
 	 * @var array
 	 */
 	protected $tableMap = [
-		'id'          => [ 'varchar(255)', self::PERM_CREATE ],
-		'addon'       => [ 'varchar(255)', self::PERM_ALL    ],
-		'description' => [ 'text',         self::PERM_ALL    ],
+		'id'          => [ 'varchar', self::PERM_NONE ],
+		'addon'       => [ 'varchar', self::PERM_ALL  ],
+		'description' => [ 'text',    self::PERM_ALL  ],
 	];
 }
- 

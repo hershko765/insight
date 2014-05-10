@@ -5,8 +5,9 @@ namespace AM\ManagerBundle\Entities\Task\Addon;
 use Core\Base\TaskManager;
 use Core\Interfaces\Task;
 use Doctrine\Bundle\DoctrineBundle\Registry;
+use Core\Base\Model;
 
-class Delete extends TaskManager implements Task {
+class Find extends TaskManager implements Task {
 
 	/**
 	 * @var Registry
@@ -18,10 +19,12 @@ class Delete extends TaskManager implements Task {
 	 * Outsource data
 	 * @var array
 	 */
+	protected $options = [];
 	protected $id;
 
-	public function setData($id)
+	public function setData($id, array $options = [])
 	{
+		$this->options = $options;
 		$this->id = $id;
 
 		return $this;
@@ -29,8 +32,7 @@ class Delete extends TaskManager implements Task {
 
 	public function execute()
 	{
-		$repository = $this->em->getRepository('AMManagerBundle:Model\Addon');
-		$repository->delete($this->id);
+		return $this->em->getRepository('AMManagerBundle:Model\Addon')->find($this->id);
 	}
 }
  
