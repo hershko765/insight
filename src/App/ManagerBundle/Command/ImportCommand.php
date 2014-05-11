@@ -16,14 +16,14 @@ class ImportCommand extends ContainerAwareCommand
 			->setName('import:addons')
 			->setDescription('Import addons')
 			->addArgument('name', InputArgument::OPTIONAL, 'Who do you want to greet?')
-			->addOption('yell', null, InputOption::VALUE_NONE, 'If set, the task will yell in uppercase letters')
+			->addOption('yell', null, InputOption::VALUE_NONE, 'If set, the handler will yell in uppercase letters')
 		;
 	}
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
-		$gateway = $this->getContainer()->get('task_gateway');
-		$gateway->getTask('addon', 'delete', 'manager')->setData(4)->execute();
+		$gateway = $this->getContainer()->get('handler_gateway');
+		$gateway->getHandler('addon', 'delete', 'manager')->setData(4)->execute();
 
 		$output->writeln('Deleted ');
 	}

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\ManagerBundle\Entities\Task\Addon;
+namespace App\ManagerBundle\Entities\Handler\Addon;
 
-use App\SourceBundle\Base\TaskManager;
-use App\SourceBundle\Interfaces\Task;
+use App\SourceBundle\Base\HandlerManager;
+use App\SourceBundle\Interfaces\Handler;
 use Doctrine\Bundle\DoctrineBundle\Registry;
 
-class Collect extends TaskManager implements Task {
+class Collect extends HandlerManager {
 
 	/**
 	 * @var Registry
@@ -33,7 +33,8 @@ class Collect extends TaskManager implements Task {
 
 	public function execute()
 	{
-		return $this->em->getRepository('AppManagerBundle:Model\Addon')->collect($this->filters, $this->paging, $this->settings);
+		return $this->em->getRepository('AppManagerBundle:Model\Addon')
+			->collect($this->filters, $this->paging, $this->settings);
 	}
 }
  

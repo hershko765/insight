@@ -1,15 +1,15 @@
 <?php
 
-namespace App\ManagerBundle\Entities\Task\Addon;
+namespace App\ManagerBundle\Entities\Handler\Addon;
 
+use App\ManagerBundle\Entities\Model\Addon;
 use App\SourceBundle\Base\Repository\Repository;
-use App\SourceBundle\Base\TaskManager;
-use App\SourceBundle\Interfaces\Task;
+use App\SourceBundle\Base\HandlerManager;
+use App\SourceBundle\Interfaces\Handler;
 use Doctrine\Bundle\DoctrineBundle\Registry;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Validator\Validator;
 
-class Update extends TaskManager implements Task {
+class Create extends HandlerManager implements Handler {
 
 	/**
 	 * @var Registry
@@ -24,15 +24,14 @@ class Update extends TaskManager implements Task {
 	protected $validate;
 
 	/**
-	 * data to update
+	 * Outsource data
 	 * @var array
 	 */
-	protected $data, $id;
+	protected $data;
 
-	public function setData(array $data, $id)
+	public function setData(array $data)
 	{
 		$this->data = $data;
-		$this->id = $id;
 		return $this;
 	}
 
@@ -40,17 +39,13 @@ class Update extends TaskManager implements Task {
 	{
 		// Get repository and filter data to contain only allowed data
 		$repo = $this->em->getRepository('AppManagerBundle:Model\Addon');
-		$repo->convert($this->data, Repository::PERM_UPDATE);
+		$repo->convert($this->data, Repository::PERM_CREATE);
 
-		// Load model by id, throw exception if nothing found
-		$addon = $repo->find($this->id);
-		if ( ! $addon)
-			throw new NotFoundHttpException('Addon not found for id: '.$this->id);
-
-		// Inject values
+		// Create empty model and apply data
+		$addon = new Addon();
 		$addon->setValues($this->data);
 
-		// Validate model, if errors found return them
+		// Validate model, check for errors and return them if exists
 		$errors = $this->validate->validate($addon);
 		if(count($errors) > 0)
 		{
@@ -60,7 +55,7 @@ class Update extends TaskManager implements Task {
 			];
 		}
 
-		// Save model into the database and return response
+		// Save model and return data response with the new ID
 		return [
 			'status' => TRUE,
 			'data_array' => $repo->save($addon)

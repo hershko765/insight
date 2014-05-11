@@ -14,13 +14,14 @@ class DefaultController extends Base\Controller
      */
     public function indexAction($name = 'roee')
     {
-	    $task = $this->getTask('addon', 'collect')
-	        ->setPaging(['page'=>  [1, 5]])
+	    $handler = $this->getHandler('addon', 'collect')
+	        ->setPaging(['page'=>  [2, 5]])
 	        ->execute();
+
 	    echo "<pre>";
-	    print_r($task);
+	    print_r($handler);
 	    die;
-	 
+
 	    return [
 		    'name' => $name,
 	    ];

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\ManagerBundle\Entities\Task\Addon;
+namespace App\ManagerBundle\Entities\Handler\Addon;
 
-use App\SourceBundle\Base\TaskManager;
-use App\SourceBundle\Interfaces\Task;
+use App\SourceBundle\Base\HandlerManager;
+use App\SourceBundle\Interfaces\Handler;
 use Doctrine\Bundle\DoctrineBundle\Registry;
 
-class Delete extends TaskManager implements Task {
+class Delete extends HandlerManager implements Handler {
 
 	/**
 	 * @var Registry

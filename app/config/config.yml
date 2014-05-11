@@ -76,6 +76,6 @@ swiftmailer:
     spool:     { type: memory }
 
 services:
-    task_gateway:
-        class:        App\SourceBundle\Base\TaskGateway
+    handler_gateway:
+        class:        App\SourceBundle\Base\HandlerGateway
         arguments: ['@service_container']
