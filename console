@@ -24,7 +24,7 @@
 	php composer.phar update
 
 # Clear Cache
-	php app/console cache:clear -e prod
+	php app/console cache:clear -e dev
 
 ---------- Doctorine ------------
 # Create Database

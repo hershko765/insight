@@ -1,0 +1,5 @@
+app_manager_addon:
+    type: rest
+    prefix: /v1
+    resource: "App\ManagerBundle\Controller\API\AddonController"
+    name_prefix:  api_1_

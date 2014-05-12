@@ -79,3 +79,12 @@ services:
     handler_gateway:
         class:        App\SourceBundle\Base\HandlerGateway
         arguments: ['@service_container']
+sensio_framework_extra:
+    view:
+        annotations: false
+
+fos_rest:
+    view:
+        view_response_listener: true
+
+nelmio_api_doc: ~
