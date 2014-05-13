@@ -39,8 +39,21 @@ class Addon extends Model
 	 */
 	private $description;
 
+	/**
+	 * @var string
+	 *
+	 * @Assert\NotBlank()
+	 * @ORM\Column(type="string", length=200)
+	 */
+	private $download_link;
 
-    /**
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime")
+	 */
+	private $last_updated;
+
+	/**
      * Get id
      *
      * @return integer 
@@ -94,5 +107,51 @@ class Addon extends Model
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set download_link
+     *
+     * @param string $downloadLink
+     * @return Addon
+     */
+    public function setDownloadLink($downloadLink)
+    {
+        $this->download_link = $downloadLink;
+
+        return $this;
+    }
+
+    /**
+     * Get download_link
+     *
+     * @return string 
+     */
+    public function getDownloadLink()
+    {
+        return $this->download_link;
+    }
+
+    /**
+     * Set last_updated
+     *
+     * @param \DateTime $lastUpdated
+     * @return Addon
+     */
+    public function setLastUpdated($lastUpdated)
+    {
+        $this->last_updated = $lastUpdated;
+
+        return $this;
+    }
+
+    /**
+     * Get last_updated
+     *
+     * @return \DateTime 
+     */
+    public function getLastUpdated()
+    {
+        return $this->last_updated;
     }
 }

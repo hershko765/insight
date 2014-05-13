@@ -3,3 +3,6 @@ app_manager_addon:
     prefix: /v1
     resource: "App\ManagerBundle\Controller\API\AddonController"
     name_prefix:  api_1_
+
+app_manager_default:
+    resource: "App\ManagerBundle\Controller\DefaultController"

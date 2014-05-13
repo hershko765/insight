@@ -4,7 +4,6 @@ app_manager:
     resource: "@ManagerBundle/Resources/config/routes.yml"
     defaults: {_format: json}
 
-# app/config/routing.yml
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/doc

@@ -1,18 +1,18 @@
 <?php
 
-namespace AM\ManagerBundle\Entities\Model;
+namespace App\ManagerBundle\Entities\Model;
 
+use App\SourceBundle\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Addon
+ * App\ManagerBundle\Entities\Model\Addon
  *
  * @ORM\Table(name="addons")
- * @ORM\Entity(repositoryClass="AM\ManagerBundle\Entities\Repository\Addon")
- * @ORM\Entity
- * @ORM\HasLifecycleCallbacks()
+ * @ORM\Entity(repositoryClass="App\ManagerBundle\Entities\Repository\Addon")
  */
-class Addon
+class Addon extends Model
 {
     /**
      * @var integer
@@ -25,6 +25,8 @@ class Addon
 
 	/**
 	 * @var string
+	 *
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=255)
 	 */
 	private $addon;
@@ -32,12 +34,26 @@ class Addon
 	/**
 	 * @var string
 	 *
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="text")
 	 */
 	private $description;
 
+	/**
+	 * @var string
+	 *
+	 * @Assert\NotBlank()
+	 * @ORM\Column(type="string", length=200)
+	 */
+	private $download_link;
 
-    /**
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime")
+	 */
+	private $last_updated;
+
+	/**
      * Get id
      *
      * @return integer 
@@ -91,5 +107,51 @@ class Addon
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set download_link
+     *
+     * @param string $downloadLink
+     * @return Addon
+     */
+    public function setDownloadLink($downloadLink)
+    {
+        $this->download_link = $downloadLink;
+
+        return $this;
+    }
+
+    /**
+     * Get download_link
+     *
+     * @return string 
+     */
+    public function getDownloadLink()
+    {
+        return $this->download_link;
+    }
+
+    /**
+     * Set last_updated
+     *
+     * @param \DateTime $lastUpdated
+     * @return Addon
+     */
+    public function setLastUpdated($lastUpdated)
+    {
+        $this->last_updated = $lastUpdated;
+
+        return $this;
+    }
+
+    /**
+     * Get last_updated
+     *
+     * @return \DateTime 
+     */
+    public function getLastUpdated()
+    {
+        return $this->last_updated;
     }
 }

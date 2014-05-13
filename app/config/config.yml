@@ -84,7 +84,11 @@ sensio_framework_extra:
         annotations: false
 
 fos_rest:
-    view:
-        view_response_listener: true
+  format_listener:
+        rules:
+          -
+            priorities: ['json']
+  view:
+      view_response_listener: true
 
 nelmio_api_doc: ~

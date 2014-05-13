@@ -1,10 +1,10 @@
 ## Usefull console commands
 
 ---------- Git Bash Commands ----------
-#Set Default pull branch
+# Set Default pull branch
 	git branch --set-upstream-to=origin/<remove> <local>
 
-#Set Default push branch
+# Set Default push branch
 	git config --global push.default upstream
 
 ---------- Symfony Commands ----------
@@ -35,3 +35,29 @@
 
 # Create Entity
 	php app/console doctrine:generate:entity
+
+---------- Migrations ------------
+## Doctrine Annonitaion Column Types
+	http://doctrine-orm.readthedocs.org/en/latest/reference/basic-mapping.html
+
+# Create Migration File
+	php app/console doctrine:migrations:generate
+
+# Automiatic create migration by annonitations
+	php app/console doctrine:migrations:diff
+
+# Run migrations
+	php app/console doctrine:migrations:migrate
+
+## More info http://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+# Change Database, Add/Remove/Modify column or more:
+	# Edit entity model property annonitation ( Add property for new colum, delete property for delete etc..)
+	# Run the following commands in there order:
+		# php app/console doctrine:generate:entities App<Bundle>:Model/<Entity> // Update entity
+		# php app/console doctrine:migrations:diff // Update migrations
+		# php app/console doctrine:migrations:migrate // Run migrations
+
+# Shortcut for the command above
+	php app/console entity:flush --migrate "Bundle:Entity"
+	// without "--migrate" all the above will happen excpet running the migration:migrate command

@@ -88,6 +88,33 @@ class AddonController extends Base\Controller {
 		return $handler->setData($filters, $paging, $settings)->execute();
 	}
 
-	public function getRoeeAction() {}
+	/**
+	 * Create a addon from the submitted data.
+	 *
+	 * @ApiDoc(
+	 *   resource = true,
+	 *   description = "Creates a new page from the submitted data.",
+	 *   input = "Acme\BlogBundle\Form\PageType",
+	 *   statusCodes = {
+	 *     200 = "Returned when successful",
+	 *     400 = "Returned when the form has errors"
+	 *   }
+	 * )
+	 *
+	 * @Annotations\View(templateVar="addon")
+	 *
+	 * @param Request $request the request object
+	 *
+	 * @return array
+	 */
+	public function postAddonAction(Request $request)
+	{
+		$query    = $request->query->all();
+		$paging   = Arr::extract($query, [ 'limit', 'offset', 'page', 'order' ]);
+		$filters  = Arr::extract($query, [ 'addon' ]);
+		$settings = Arr::extract($query, [ 'select' ]);
 
+		$handler  = $this->getHandler('addon', 'collect');
+		return $handler->setData($filters, $paging, $settings)->execute();
+	}
 }
