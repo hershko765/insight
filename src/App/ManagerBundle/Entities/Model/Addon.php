@@ -10,18 +10,18 @@ use Symfony\Component\Validator\Constraints as Assert;
  * App\ManagerBundle\Entities\Model\Addon
  *
  * @ORM\Table(name="addons")
+ * @ORM\HasLifecycleCallbacks
  * @ORM\Entity(repositoryClass="App\ManagerBundle\Entities\Repository\Addon")
  */
 class Addon extends Model
 {
     /**
      * @var integer
-     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+	protected $id;
 
 	/**
 	 * @var string
@@ -29,7 +29,7 @@ class Addon extends Model
 	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=255)
 	 */
-	private $addon;
+	protected $addon;
 
 	/**
 	 * @var string
@@ -37,7 +37,7 @@ class Addon extends Model
 	 * @Assert\NotBlank()
 	 * @ORM\Column(type="text")
 	 */
-	private $description;
+	protected $description;
 
 	/**
 	 * @var string
@@ -45,13 +45,13 @@ class Addon extends Model
 	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=200)
 	 */
-	private $download_link;
+	protected $download_link;
 
 	/**
 	 * @var string
 	 * @ORM\Column(type="datetime")
 	 */
-	private $last_updated;
+	protected $updated;
 
 	/**
      * Get id
@@ -133,25 +133,25 @@ class Addon extends Model
     }
 
     /**
-     * Set last_updated
+     * Set updated
      *
      * @param \DateTime $lastUpdated
      * @return Addon
      */
-    public function setLastUpdated($lastUpdated)
+    public function setUpdated($updated)
     {
-        $this->last_updated = $lastUpdated;
+        $this->updated = $updated;
 
         return $this;
     }
 
     /**
-     * Get last_updated
+     * Get updated
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
-    public function getLastUpdated()
+    public function getUpdated()
     {
-        return $this->last_updated;
+        return $this->updated;
     }
 }

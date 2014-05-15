@@ -109,12 +109,10 @@ class AddonController extends Base\Controller {
 	 */
 	public function postAddonAction(Request $request)
 	{
-		$query    = $request->query->all();
-		$paging   = Arr::extract($query, [ 'limit', 'offset', 'page', 'order' ]);
-		$filters  = Arr::extract($query, [ 'addon' ]);
-		$settings = Arr::extract($query, [ 'select' ]);
+		// Gathering data and handler
+		$post = $request->request->all();
+		$handler = $this->getHandler('addon', 'create');
 
-		$handler  = $this->getHandler('addon', 'collect');
-		return $handler->setData($filters, $paging, $settings)->execute();
+		return $handler->setData($post)->execute();
 	}
 }

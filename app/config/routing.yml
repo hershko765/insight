@@ -7,3 +7,7 @@ app_manager:
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/doc
+
+default_manager:
+    resource: "@ManagerBundle/Controller/DefaultController.php"
+    type:     annotation

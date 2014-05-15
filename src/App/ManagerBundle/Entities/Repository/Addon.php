@@ -23,8 +23,19 @@ class Addon extends Repository {
 	 * @var array
 	 */
 	protected $tableMap = [
-		'id'          => [ 'varchar', self::PERM_NONE ],
-		'addon'       => [ 'varchar', self::PERM_ALL  ],
-		'description' => [ 'text',    self::PERM_ALL  ],
+		'id'            => [ 'varchar',  self::PERM_NONE ],
+		'addon'         => [ 'varchar',  self::PERM_ALL  ],
+		'description'   => [ 'text',     self::PERM_ALL  ],
+		'download_link' => [ 'text',     self::PERM_ALL  ],
+		'updated'       => [ 'datetime', self::PERM_NONE  ],
+	];
+
+	/**
+	 * Model abilities
+	 *
+	 * @var array
+	 */
+	protected $abilities = [
+		self::UPDATABLE
 	];
 }

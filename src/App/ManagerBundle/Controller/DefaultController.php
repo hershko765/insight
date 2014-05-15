@@ -32,10 +32,6 @@ class DefaultController extends Base\Controller
 	        ->setPaging(['page'=>  [2, 5]])
 	        ->execute();
 
-	    echo "<pre>";
-	    print_r($handler);
-	    die;
-
 	    return [
 		    'name' => $name,
 	    ];

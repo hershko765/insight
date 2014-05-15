@@ -37,13 +37,11 @@ class Create extends HandlerManager implements Handler {
 
 	public function execute()
 	{
+		$addon = new Addon();
+
 		// Get repository and filter data to contain only allowed data
 		$repo = $this->em->getRepository('AppManagerBundle:Model\Addon');
-		$repo->convert($this->data, Repository::PERM_CREATE);
-
-		// Create empty model and apply data
-		$addon = new Addon();
-		$addon->setValues($this->data);
+		$repo->hydrate($this->data, $addon, Repository::PERM_CREATE);
 
 		// Validate model, check for errors and return them if exists
 		$errors = $this->validate->validate($addon);
