@@ -1,0 +1,25 @@
+{
+	"name": "Symfony Workstation",
+		"version": "0.0.0",
+		"homepage": "https://github.com/hershko765/Addon-Manager",
+	"authors": [
+		"roee hershko <hershko765@gmail.com>"
+	],
+	"description": "Basic symfony workstation",
+	"license": "MIT",
+	"private": true,
+	"directory" : "./",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "*",
+		"backbone": "*",
+		"backbone.marionette": "*",
+		"requirejs": "*"
+	}
+}

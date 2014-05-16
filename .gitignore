@@ -4,4 +4,3 @@ app/logs
 src/App/SourceBundle/Logs/*
 vendor/*
 web/media/build
-web/media/js/vendor
