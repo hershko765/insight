@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block page_title %} Symfony Workstation {% endblock %}</title>
+</head>
+<body>
+
+{% block content %} {% endblock %}
+{% block requireJS %}
+    <script type="text/javascript" src="/media/js/vendor/requirejs/require.js" data-main="/media/js/main.js"></script>
+{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>
