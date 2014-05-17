@@ -20,3 +20,9 @@ Simple Workstation for symfony
 ## Deployment
 	# php app/console cache:clear -e prod
 	# node r.js -o build.js
+
+# Update Changes Flow
+	# Commit and push changes
+	# Checkout develop and merge your branch
+	# Push develop
+	# Pull develop in server shell
