@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0fbac5f1cbb082e8d800660a4ef99c41",
+    "hash": "90741079aa0d3ea8dcba9ad57aca79c3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -64,7 +64,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -118,7 +118,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -752,12 +752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "a1763eb9c8d3988d607b4448a1a24197f7bcf8cb"
+                "reference": "68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a1763eb9c8d3988d607b4448a1a24197f7bcf8cb",
-                "reference": "a1763eb9c8d3988d607b4448a1a24197f7bcf8cb",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7",
+                "reference": "68ba59b11d5e1cf8e83aa0bf684b6a4f2d0050b7",
                 "shasum": ""
             },
             "require": {
@@ -822,7 +822,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-04-28 21:08:53"
+            "time": "2014-05-15 16:34:45"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1350,12 +1350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "493963f0c0ab9b3272064a39f0d981172b976ad0"
+                "reference": "968a162544cbf32b8ea5ab1b7dedeb87a3ce0ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/493963f0c0ab9b3272064a39f0d981172b976ad0",
-                "reference": "493963f0c0ab9b3272064a39f0d981172b976ad0",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/968a162544cbf32b8ea5ab1b7dedeb87a3ce0ccf",
+                "reference": "968a162544cbf32b8ea5ab1b7dedeb87a3ce0ccf",
                 "shasum": ""
             },
             "require": {
@@ -1416,7 +1416,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-05-12 16:01:33"
+            "time": "2014-05-16 21:52:41"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2256,16 +2256,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "cda64e26a980f433ce98200ba1b2301850489aab"
+                "reference": "a98fb6b9808610c1aa326c736893d3d77d9383b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/cda64e26a980f433ce98200ba1b2301850489aab",
-                "reference": "cda64e26a980f433ce98200ba1b2301850489aab",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/a98fb6b9808610c1aa326c736893d3d77d9383b6",
+                "reference": "a98fb6b9808610c1aa326c736893d3d77d9383b6",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2302,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2014-02-26 13:56:25"
+            "time": "2014-05-16 12:34:51"
         }
     ],
     "packages-dev": [
