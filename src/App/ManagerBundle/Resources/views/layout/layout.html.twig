@@ -10,7 +10,7 @@
     {% if app.environment == 'dev' %}
         <script type="text/javascript" src="/media/js/vendor/requirejs/require.js" data-main="/media/js/main.js"></script>
     {% elseif app.environment == 'prod' %}
-        <script type="text/javascript" src="/media/build/js/vendor/requirejs/require.js" data-main="/media/build/js/main.js"></script>
+        <script type="text/javascript" src="/media-build/build/js/vendor/requirejs/require.js" data-main="/media-build/build/js/main.js"></script>
     {% endif %}
 {% endblock %}
 {% block scripts %}{% endblock %}

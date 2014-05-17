@@ -1,8 +1,8 @@
 ({
 	// Directory to copy and minify
-	appDir: './',
+	appDir: '../media',
 	// Base url for related paths
-	baseUrl: './js',
+	baseUrl: 'js',
 	// Directory of the minified copied project
 	dir: './build',
 	inlineText: true,
@@ -20,5 +20,5 @@
 	optimizeCss: 'standard',
 	removeCombined: true,
 	// Main Configuration
-	mainConfigFile: 'js/main.js'
+	mainConfigFile: '../media/js/main.js'
 })
