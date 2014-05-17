@@ -6,9 +6,9 @@ requirejs.config({
 		jquery: 'vendor/jquery/dist/jquery',
 		underscore: 'vendor/underscore/underscore',
 		backbone: 'vendor/backbone/backbone',
-		backboneBabysitter: 'vendor/backbone.babysitter/lib/backbone.babysitter',
-		backboneWreqer: 'vendor/backbone.wreqr/lib/backbone.wreqr',
-		marionette: 'vendor/backbone.marionette/lib/backbone.marionette',
+		'backbone.babysitter': 'vendor/backbone.babysitter/lib/backbone.babysitter',
+		'backbone.wreqr': 'vendor/backbone.wreqr/lib/backbone.wreqr',
+		marionette: 'vendor/backbone.marionette/lib/core/amd/backbone.marionette',
 		app: 'app'
 	},
 	shim: {
@@ -25,8 +25,8 @@ requirejs.config({
 		marionette: {
 			deps: [
 				'backbone',
-				'backboneBabysitter',
-				'backboneWreqer'
+				'backbone.babysitter',
+				'backbone.wreqr'
 			],
 			exports: 'Marionette'
 		}

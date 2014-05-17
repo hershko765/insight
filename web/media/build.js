@@ -5,6 +5,7 @@
 	baseUrl: './js',
 	// Directory of the minified copied project
 	dir: './build',
+	inlineText: true,
 	// Remove comments
 	preserveLicenseComments: false,
 	// List of modules/divided parts of the app

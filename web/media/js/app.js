@@ -1,7 +1,7 @@
 /**
  * Initialize App
  */
-define(['marionette'], function(Marionette){
+define(['backbone', 'marionette'], function(Backbone, Marionette){
 	// Initialize App
 	var App = new Marionette.Application();
 

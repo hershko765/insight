@@ -18,4 +18,5 @@ Simple Workstation for symfony
 		$ bower install
 
 ## Deployment
-# node r.js -o build.js
+	# php app/console cache:clear -e prod
+	# node r.js -o build.js
