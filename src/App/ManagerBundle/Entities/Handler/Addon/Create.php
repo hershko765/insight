@@ -42,7 +42,7 @@ class Create extends HandlerManager implements Handler {
 		// Get repository and filter data to contain only allowed data
 		$repo = $this->em->getRepository('AppManagerBundle:Model\Addon');
 		$repo->hydrate($this->data, $addon, Repository::PERM_CREATE);
-
+		
 		// Validate model, check for errors and return them if exists
 		$errors = $this->validate->validate($addon);
 		if(count($errors) > 0)

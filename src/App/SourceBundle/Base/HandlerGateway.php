@@ -36,6 +36,9 @@ class HandlerGateway {
 		$handler_alias = strtolower($bundle).'_'.strtolower($entity).'_'.strtolower($handler);
 		// Get handler class name
 		$handler_class = 'App\\'.ucwords($bundle).'Bundle\Entities\Handler\\'.ucwords($entity).'\\'.ucwords($handler);
+		$handler_class = str_replace(':', '\\', $handler_class);
+		$handler_alias = str_replace(':', '_', $handler_alias);
+
 		if(class_exists($handler_class))
 		{
 			// Checking if the handler container already have that handler, if not creating one
@@ -69,6 +72,7 @@ class HandlerGateway {
 		{
 			$docs = $prop->getDocComment();
 			preg_match('/@DI([ ]{0,})\((?<props>.*)\)/', $docs, $match);
+			
 			if ( ! Arr::get($match, 'props')) continue;
 			$docs = Arr::formatArray(Arr::get($match, 'props'), '=');
 			$alias = Arr::get($docs, 'alias', $prop->getName());

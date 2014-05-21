@@ -81,7 +81,7 @@ class AddonController extends Base\Controller {
 	{
 		$query    = $request->query->all();
 		$paging   = Arr::extract($query, [ 'limit', 'offset', 'page', 'order' ]);
-		$filters  = Arr::extract($query, [ 'addon' ]);
+		$filters  = Arr::extract($query, [ 'search' ]);
 		$settings = Arr::extract($query, [ 'select' ]);
 
 		$handler  = $this->getHandler('addon', 'collect');

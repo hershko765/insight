@@ -8,11 +8,11 @@ class Dir {
 
 	public static function Src()
 	{
-		$src = realpath('./../src');
+		$src = is_dir(realpath('./src/')) ? realpath('./src/') : realpath('../src/');
 		if ( ! is_dir($src))
 			throw new Exception('src path not found');
 
-		return $src;
+		return $src.'/';
 	}
 
 	public static function Web()

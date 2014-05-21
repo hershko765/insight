@@ -8,6 +8,12 @@ use App\SourceBundle\Interfaces\Handler;
 abstract class HandlerManager implements Handler {
 
 	/**
+	 * @var HandlerGateway
+	 * @DI(alias=handler_gateway)
+	 */
+	protected $handlerGateway;
+
+	/**
 	 * Inject dependencies into class properties
 	 */
 	public function __construct()
@@ -18,8 +24,30 @@ abstract class HandlerManager implements Handler {
 		{
 			$this->{$DIClass} = Arr::get($args, $key);
 		}
+		if(method_exists($this, 'initialize')) $this->initialize();
 	}
 
+	/**
+	 * Get handler gateway instance
+	 * @return HandlerGateway
+	 */
+	protected function getHandlerGateway()
+	{
+		return $this->handlerGateway;
+	}
+
+	/**
+	 * Shortcut for loading handler
+	 *
+	 * @param      $entity
+	 * @param      $handler
+	 * @param bool $bundle
+	 * @return HandlerManager
+	 */
+	protected function getHandler($entity, $handler, $bundle = FALSE)
+	{
+		return $this->handlerGateway->getHandler($entity, $handler, $bundle);
+	}
 	/**
 	 * Convert Validator object to array
 	 * @param $errors

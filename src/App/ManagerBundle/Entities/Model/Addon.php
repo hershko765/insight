@@ -27,15 +27,7 @@ class Addon extends Model
 	 * @var string
 	 *
 	 * @Assert\NotBlank()
-	 * @ORM\Column(type="string", length=255)
-	 */
-	protected $addon;
-
-	/**
-	 * @var string
-	 *
-	 * @Assert\NotBlank()
-	 * @ORM\Column(type="text")
+	 * @ORM\Column(type="text", nullable=TRUE)
 	 */
 	protected $description;
 
@@ -51,39 +43,46 @@ class Addon extends Model
 	 * @var string
 	 * @ORM\Column(type="datetime")
 	 */
+	protected $last_release;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime", nullable=TRUE)
+	 */
+	protected $last_alpha;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="string", length=50, nullable=TRUE)
+	 */
+	protected $version;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="string", length=200)
+	 */
+	protected $title;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="text", nullable=TRUE)
+	 */
+	protected $screenshots;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime")
+	 */
 	protected $updated;
 
 	/**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set addon
-     *
-     * @param string $addon
-     * @return Addon
-     */
-    public function setAddon($addon)
-    {
-        $this->addon = $addon;
-
-        return $this;
-    }
-
-    /**
-     * Get addon
-     *
-     * @return string 
-     */
-    public function getAddon()
-    {
-        return $this->addon;
     }
 
     /**
@@ -108,6 +107,121 @@ class Addon extends Model
     {
         return $this->description;
     }
+
+	/**
+	 * Set title
+	 *
+	 * @param string $title
+	 * @return Addon
+	 */
+	public function setTitle($title)
+	{
+		$this->title = $title;
+
+		return $this;
+	}
+
+	/**
+	 * Get title
+	 *
+	 * @return string
+	 */
+	public function getTitle()
+	{
+		return $this->title;
+	}
+
+	/**
+	 * Set version
+	 *
+	 * @param string $version
+	 * @return Addon
+	 */
+	public function setVersion($version)
+	{
+		$this->version = $version;
+
+		return $this;
+	}
+
+	/**
+	 * Get version
+	 *
+	 * @return string
+	 */
+	public function getVersion()
+	{
+		return $this->version;
+	}
+
+	/**
+	 * Set screenshots
+	 *
+	 * @param string $screenshots
+	 * @return Addon
+	 */
+	public function setScreenshots($screenshots)
+	{
+		$this->screenshots = $screenshots;
+
+		return $this;
+	}
+
+	/**
+	 * Get screenshots
+	 *
+	 * @return string
+	 */
+	public function getScreenshots()
+	{
+		return $this->screenshots;
+	}
+	
+	/**
+	 * Set last release
+	 *
+	 * @param string $last_release
+	 * @return Addon
+	 */
+	public function setLastRelease($lastrelease)
+	{
+		$this->last_release = $lastrelease;
+
+		return $this;
+	}
+
+	/**
+	 * Get last release
+	 *
+	 * @return string
+	 */
+	public function getLastRelease()
+	{
+		return $this->last_release;
+	}
+
+	/**
+	 * Set last alpha
+	 *
+	 * @param string $last_alpha
+	 * @return Addon
+	 */
+	public function setLastAlpha($lastalpha)
+	{
+		$this->last_alpha = $lastalpha;
+
+		return $this;
+	}
+
+	/**
+	 * Get last alpha
+	 *
+	 * @return string
+	 */
+	public function getLastAlpha()
+	{
+		return $this->last_alpha;
+	}
 
     /**
      * Set download_link

@@ -23,17 +23,15 @@ class ImportCommand extends ContainerAwareCommand
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$gateway = $this->getContainer()->get('handler_gateway');
-		$gateway->getHandler('addon', 'delete', 'manager')->setData(4)->execute();
-
+		$gateway->getHandler('Addon:Resource:WowAce', 'import', 'manager')->execute();
 		$output->writeln('Deleted ');
 	}
 }
 
-// JSON files contain all categories
-// Loop trough all categories for each addon do the following:
+# 2 tasks , 1 update 1 recreate
 
-# Check if the addon exists
-	# If exists check if its updated
-		# Updated addon
-		# Ignore and continue
-	# If not exists create new record in addons and add it
+# Why i need 2 tasks ?
+	# because cron that only update is more silence and specific
+
+# Task addon:import
+	# get descriptions, files, images, last update etc

@@ -15,7 +15,7 @@ class Addon extends Repository {
 	 * @var array
 	 */
 	protected $filterMap = [
-		[ 'addonFilter', 'addon', 'LIKE' ],
+		[ 'search', 'title', 'LIKE' ],
 	];
 
 	/**
@@ -24,10 +24,14 @@ class Addon extends Repository {
 	 */
 	protected $tableMap = [
 		'id'            => [ 'varchar',  self::PERM_NONE ],
-		'addon'         => [ 'varchar',  self::PERM_ALL  ],
+		'title'         => [ 'varchar',  self::PERM_ALL  ],
 		'description'   => [ 'text',     self::PERM_ALL  ],
+		'version'       => [ 'text',     self::PERM_ALL  ],
 		'download_link' => [ 'text',     self::PERM_ALL  ],
-		'updated'       => [ 'datetime', self::PERM_NONE  ],
+		'screenshots'   => [ 'text',     self::PERM_ALL  ],
+		'last_alpha'    => [ 'datetime', self::PERM_ALL  ],
+		'last_release'  => [ 'datetime', self::PERM_ALL  ],
+		'updated'       => [ 'datetime', self::PERM_NONE ],
 	];
 
 	/**

@@ -171,4 +171,4 @@ abstract class Core extends EntityRepository {
 		return TRUE;
 	}
 
-} // End Core 
+} // End Core

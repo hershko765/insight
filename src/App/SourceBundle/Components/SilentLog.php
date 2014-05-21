@@ -15,8 +15,8 @@ class SilentLog {
 
 	private function __construct()
 	{
-//		register_shutdown_function(function(){ $this->logToFile(); });
-		$this->logPath = Dir::Src().'/SourceBundle/Logs';
+		register_shutdown_function(function(){ $this->logToFile(); });
+		$this->logPath = Dir::Src().'App/SourceBundle/Logs';
 		self::$instance = $this;
 	}
 
