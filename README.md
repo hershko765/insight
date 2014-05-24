@@ -26,3 +26,5 @@ Simple Workstation for symfony
 	# Checkout develop and merge your branch
 	# Push develop
 	# Pull develop in server shell
+
+# The update handler will check for updated addons with last release of atleast 2014 or 1 year ago

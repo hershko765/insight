@@ -8,7 +8,6 @@ use App\SourceBundle\Base;
 use App\SourceBundle\Helpers\Arr;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FOS\RestBundle\Controller\Annotations;
 
@@ -19,12 +18,11 @@ use FOS\RestBundle\View\View;
 use FOS\RestBundle\Request\ParamFetcherInterface;
 use Symfony\Component\Form\FormTypeInterface;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
-use Symfony\Component\Validator\Exception\ValidatorException;
 
-class AddonController extends Base\Controller {
+class CategoryController extends Base\Controller {
 
 	/**
-	 * Get single Addon,
+	 * Get single Category,
 	 *
 	 * @ApiDoc(
 	 *   resource = true,
@@ -36,7 +34,7 @@ class AddonController extends Base\Controller {
 	 *   }
 	 * )
 	 *
-	 * @Annotations\View(templateVar="addon")
+	 * @Annotations\View(templateVar="category")
 	 *
 	 * @param int     $id      the page id
 	 *
@@ -44,32 +42,33 @@ class AddonController extends Base\Controller {
 	 *
 	 * @throws NotFoundHttpException when page not exist
 	 */
-	public function getAddonAction($id)
+	public function getCategoryAction($id)
 	{
-		$handler = $this->getHandler('addon', 'get');
+		$handler = $this->getHandler('category', 'get');
+
 		return $handler->setData($id)->execute();
 	}
 
 	/**
-	 * Get single Addon,
+	 * Get single Category,
 	 *
 	 * @ApiDoc(
 	 *   resource = true,
-	 *   description = "Get an addon by given ID",
+	 *   description = "Get an category by given ID",
 	 *   filters={
-	 *      {"name"="addon", "dataType"="string", "description"="search addon by name"},
+	 *      {"name"="category", "dataType"="string", "description"="search category by name"},
 	 *      {"name"="limit", "dataType"="integer"},
 	 *      {"name"="offset", "dataType"="integer"},
 	 *      {"name"="order", "dataType"="string", "description"="order by column"}
 	 *   },
-	 *   output = "App\ManagerBundle\Entities\Model\Addon",
+	 *   output = "App\ManagerBundle\Entities\Model\Category",
 	 *   statusCodes = {
 	 *     200 = "Returned when successful",
-	 *     404 = "Returned when the addon is not found"
+	 *     404 = "Returned when the category is not found"
 	 *   }
 	 * )
 	 *
-	 * @Annotations\View(templateVar="addon")
+	 * @Annotations\View(templateVar="category")
 	 *
 	 * @param Request $request the request object
 	 * @param int     $id      the page id
@@ -78,19 +77,19 @@ class AddonController extends Base\Controller {
 	 *
 	 * @throws NotFoundHttpException when page not exist
 	 */
-	public function getAddonsAction(Request $request)
+	public function getCategoriesAction(Request $request)
 	{
 		$query    = $request->query->all();
 		$paging   = Arr::extract($query, [ 'limit', 'offset', 'page', 'order' ]);
-		$filters  = Arr::extract($query, [ 'search', 'category' ]);
-		$settings = Arr::extract($query, [ 'select', 'selectBox' ]);
+		$filters  = Arr::extract($query, [ 'search', 'parent' ]);
+		$settings = Arr::extract($query, [ 'select', 'index', 'selectBox' ]);
 
-		$handler  = $this->getHandler('addon', 'collect');
+		$handler  = $this->getHandler('category', 'collect');
 		return $handler->setData($filters, $paging, $settings)->execute();
 	}
 
 	/**
-	 * Create a addon from the submitted data.
+	 * Create a category from the submitted data.
 	 *
 	 * @ApiDoc(
 	 *   resource = true,
@@ -102,20 +101,18 @@ class AddonController extends Base\Controller {
 	 *   }
 	 * )
 	 *
-	 * @Annotations\View(templateVar="addon")
+	 * @Annotations\View(templateVar="category")
 	 *
 	 * @param Request $request the request object
 	 *
 	 * @return array
 	 */
-	public function postAddonAction(Request $request)
+	public function postCategoryAction(Request $request)
 	{
-		$response = new Response();
-		$response->setStatusCode(Response::HTTP_OK);
-
 		// Gathering data and handler
 		$post = $request->request->all();
-		$handler = $this->getHandler('addon', 'create');
+		$handler = $this->getHandler('category', 'create');
+
 		return $handler->setData($post)->execute();
 	}
 }

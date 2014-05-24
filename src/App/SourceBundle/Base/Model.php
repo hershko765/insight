@@ -23,6 +23,7 @@ abstract class Model {
 	 */
 	public function setValues($data)
 	{
+
 		foreach($data as $col => $val)
 		{
 			$method = 'set'.str_replace(' ', '', ucwords(str_replace('_', ' ', $col)));
@@ -49,6 +50,11 @@ abstract class Model {
 	public function asJSON()
 	{
 		return json_encode($this->_asArray());
+	}
+
+	public function isNew()
+	{
+		return ! (bool) $this->getId();
 	}
 
 	/**

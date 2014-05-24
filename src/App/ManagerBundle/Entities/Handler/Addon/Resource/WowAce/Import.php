@@ -26,6 +26,10 @@ class Import extends HandlerManager {
 
 	public function execute()
 	{
+		$categoriesArr = $this->getHandler('Category', 'Collect', 'Manager')
+			->setSettings(['selectBox' => ['name', 'id']])
+			->execute();
+
 		for($i = 1; $i <= 78; $i++)
 		{
 			$pageHtml = file_get_contents('http://www.wowace.com/addons/?page='.$i);
@@ -38,12 +42,24 @@ class Import extends HandlerManager {
 			{
 				try {
 					$addon = [];
-
+					$addon['resource_id'] = 3;
 					// Get Overview page HTML and extract description box
 					$pageHtml = file_get_html('http://www.wowace.com/addons/'.$url);
 
 					if ( ! $pageHtml) continue;
 
+					$categories = $pageHtml->find('ul.category-list li a');
+					$addonCategories = [];
+					foreach($categories as $category)
+					{
+						preg_match('/category=(?<category>.*)/', $category->href, $match);
+						if( Arr::get($match, 'category'))
+						{
+							$cat = Arr::get($categoriesArr, $match['category']);
+							if($cat) $addonCategories[] = $cat;
+						}
+					}
+					$addon['categories'] = $addonCategories;
 					$desc = $pageHtml->find('div.content-box-inner', 0)->innertext;
 
 					// Strip all ileagel tags and re create html object
@@ -56,10 +72,6 @@ class Import extends HandlerManager {
 					if ($desc->find('h1', 0)) {
 						$addon['title'] = strip_tags($desc->find('h1', 0)->outertext);
 						$desc->find('h1', 0)->outertext = '';
-					}
-					else if ($desc->find('h2', 0)) {
-						$addon['title'] = strip_tags($desc->find('h2', 0)->outertext);
-						$desc->find('h2', 0)->outertext = '';
 					}
 
 					if(Arr::get($created, $addon['title'])) continue;
@@ -92,7 +104,7 @@ class Import extends HandlerManager {
 
 					// Finally creating the addon
 					$this->getHandler('Addon', 'Create', 'Manager')->setData($addon)->execute();
-					echo "Addon Created".$addon['title']."\n";
+					echo "Addon Created ".$addon['title']."\n";
 					$created[$addon['title']] = 1;
 				}
 				catch(\ErrorException $e)

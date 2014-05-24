@@ -28,9 +28,7 @@ class DefaultController extends Base\Controller
      */
     public function indexAction($name = 'roee')
     {
-	    $handler = $this->getHandler('addon', 'collect')
-	        ->setPaging(['page'=>  [2, 5]])
-	        ->execute();
+	    $handler = $this->getHandler('addon', 'collect')->setFilters(['category' => 2])->execute();
 
 	    return [
 		    'name' => $name,

@@ -5,6 +5,11 @@ namespace App\ManagerBundle\Entities\Model;
 use App\SourceBundle\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\SourceBundle\Base\Collection;
+use Doctrine\ORM\Mapping\ManyToMany;
+use Doctrine\ORM\Mapping\JoinTable;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
 
 /**
  * App\ManagerBundle\Entities\Model\Addon
@@ -24,6 +29,15 @@ class Addon extends Model
 	protected $id;
 
 	/**
+	 * @ManyToMany(targetEntity="Category")
+	 * @JoinTable(name="addon_categories",
+	 *      joinColumns={@JoinColumn(name="addon_id", referencedColumnName="id")},
+	 *      inverseJoinColumns={@JoinColumn(name="category_id", referencedColumnName="id")}
+	 *      )
+	 */
+	protected $categories;
+
+	/**
 	 * @var string
 	 *
 	 * @Assert\NotBlank()
@@ -41,6 +55,7 @@ class Addon extends Model
 
 	/**
 	 * @var string
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="datetime")
 	 */
 	protected $last_release;
@@ -59,6 +74,7 @@ class Addon extends Model
 
 	/**
 	 * @var string
+	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=200)
 	 */
 	protected $title;
@@ -68,6 +84,13 @@ class Addon extends Model
 	 * @ORM\Column(type="text", nullable=TRUE)
 	 */
 	protected $screenshots;
+
+	/**
+	 * @var integer
+	 * @ManyToOne(targetEntity="App\ManagerBundle\Entities\Model\Addon\Resource")
+	 * @JoinColumn(name="resource_id", referencedColumnName="id")
+	 */
+	protected $resource_id;
 
 	/**
 	 * @var string
@@ -185,6 +208,9 @@ class Addon extends Model
 	 */
 	public function setLastRelease($lastrelease)
 	{
+		if (is_string($lastrelease))
+			$lastrelease = new \DateTime($lastrelease);
+
 		$this->last_release = $lastrelease;
 
 		return $this;
@@ -267,5 +293,45 @@ class Addon extends Model
     public function getUpdated()
     {
         return $this->updated;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->categories = new Collection();
+    }
+
+    /**
+     * Add categories
+     *
+     * @param \App\ManagerBundle\Entities\Model\Category $categories
+     * @return Addon
+     */
+    public function addCategory(\App\ManagerBundle\Entities\Model\Category $categories)
+    {
+        $this->categories[] = $categories;
+
+        return $this;
+    }
+
+    /**
+     * Remove categories
+     *
+     * @param \App\ManagerBundle\Entities\Model\Category $categories
+     */
+    public function removeCategory(\App\ManagerBundle\Entities\Model\Category $categories)
+    {
+        $this->categories->removeElement($categories);
+    }
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }

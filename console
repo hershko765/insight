@@ -61,3 +61,6 @@
 # Shortcut for the command above
 	php app/console entity:flush --migrate "Bundle:Entity"
 	// without "--migrate" all the above will happen excpet running the migration:migrate command
+
+# Updat Schema
+ php app/console doctrine:schema:update --force

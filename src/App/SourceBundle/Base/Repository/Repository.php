@@ -58,7 +58,15 @@ abstract class Repository extends Core {
 		$this->addPaging($qb, $paging);
 		$this->addSettings($qb, $settings);
 
-		return $qb->getQuery()->getArrayResult();
+		$result = $qb->getQuery()->getArrayResult();
+
+		if (Arr::get($settings, 'index'))
+			$this->applyIdx($result, $settings['index']);
+
+		if (Arr::get($settings, 'selectBox'))
+			$this->createSelect($result, $settings['selectBox']);
+
+		return $result;
 	}
 
 	/**
@@ -115,7 +123,7 @@ abstract class Repository extends Core {
 
 		// Set abilities if exists
 		$this->setAbilities($model);
-
+		
 		// Set Model with the filtered values
 		$model->setValues($convertedData);
 	}

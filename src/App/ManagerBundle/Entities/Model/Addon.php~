@@ -5,39 +5,43 @@ namespace App\ManagerBundle\Entities\Model;
 use App\SourceBundle\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\ORM\Mapping\ManyToMany;
+use Doctrine\ORM\Mapping\JoinTable;
+use Doctrine\ORM\Mapping\JoinColumn;
 
 /**
  * App\ManagerBundle\Entities\Model\Addon
  *
  * @ORM\Table(name="addons")
+ * @ORM\HasLifecycleCallbacks
  * @ORM\Entity(repositoryClass="App\ManagerBundle\Entities\Repository\Addon")
  */
 class Addon extends Model
 {
     /**
      * @var integer
-     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+	protected $id;
+
+	/**
+	 * @ManyToMany(targetEntity="Category")
+	 * @JoinTable(name="addon_categories",
+	 *      joinColumns={@JoinColumn(name="addon_id", referencedColumnName="id")},
+	 *      inverseJoinColumns={@JoinColumn(name="category_id", referencedColumnName="id")}
+	 *      )
+	 */
+	protected $categories;
 
 	/**
 	 * @var string
 	 *
 	 * @Assert\NotBlank()
-	 * @ORM\Column(type="string", length=255)
+	 * @ORM\Column(type="text", nullable=TRUE)
 	 */
-	private $addon;
-
-	/**
-	 * @var string
-	 *
-	 * @Assert\NotBlank()
-	 * @ORM\Column(type="text")
-	 */
-	private $description;
+	protected $description;
 
 	/**
 	 * @var string
@@ -45,45 +49,52 @@ class Addon extends Model
 	 * @Assert\NotBlank()
 	 * @ORM\Column(type="string", length=200)
 	 */
-	private $download_link;
+	protected $download_link;
 
 	/**
 	 * @var string
 	 * @ORM\Column(type="datetime")
 	 */
-	private $last_updated;
+	protected $last_release;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime", nullable=TRUE)
+	 */
+	protected $last_alpha;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="string", length=50, nullable=TRUE)
+	 */
+	protected $version;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="string", length=200)
+	 */
+	protected $title;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="text", nullable=TRUE)
+	 */
+	protected $screenshots;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="datetime")
+	 */
+	protected $updated;
 
 	/**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set addon
-     *
-     * @param string $addon
-     * @return Addon
-     */
-    public function setAddon($addon)
-    {
-        $this->addon = $addon;
-
-        return $this;
-    }
-
-    /**
-     * Get addon
-     *
-     * @return string 
-     */
-    public function getAddon()
-    {
-        return $this->addon;
     }
 
     /**
@@ -109,6 +120,121 @@ class Addon extends Model
         return $this->description;
     }
 
+	/**
+	 * Set title
+	 *
+	 * @param string $title
+	 * @return Addon
+	 */
+	public function setTitle($title)
+	{
+		$this->title = $title;
+
+		return $this;
+	}
+
+	/**
+	 * Get title
+	 *
+	 * @return string
+	 */
+	public function getTitle()
+	{
+		return $this->title;
+	}
+
+	/**
+	 * Set version
+	 *
+	 * @param string $version
+	 * @return Addon
+	 */
+	public function setVersion($version)
+	{
+		$this->version = $version;
+
+		return $this;
+	}
+
+	/**
+	 * Get version
+	 *
+	 * @return string
+	 */
+	public function getVersion()
+	{
+		return $this->version;
+	}
+
+	/**
+	 * Set screenshots
+	 *
+	 * @param string $screenshots
+	 * @return Addon
+	 */
+	public function setScreenshots($screenshots)
+	{
+		$this->screenshots = $screenshots;
+
+		return $this;
+	}
+
+	/**
+	 * Get screenshots
+	 *
+	 * @return string
+	 */
+	public function getScreenshots()
+	{
+		return $this->screenshots;
+	}
+	
+	/**
+	 * Set last release
+	 *
+	 * @param string $last_release
+	 * @return Addon
+	 */
+	public function setLastRelease($lastrelease)
+	{
+		$this->last_release = $lastrelease;
+
+		return $this;
+	}
+
+	/**
+	 * Get last release
+	 *
+	 * @return string
+	 */
+	public function getLastRelease()
+	{
+		return $this->last_release;
+	}
+
+	/**
+	 * Set last alpha
+	 *
+	 * @param string $last_alpha
+	 * @return Addon
+	 */
+	public function setLastAlpha($lastalpha)
+	{
+		$this->last_alpha = $lastalpha;
+
+		return $this;
+	}
+
+	/**
+	 * Get last alpha
+	 *
+	 * @return string
+	 */
+	public function getLastAlpha()
+	{
+		return $this->last_alpha;
+	}
+
     /**
      * Set download_link
      *
@@ -133,25 +259,25 @@ class Addon extends Model
     }
 
     /**
-     * Set last_updated
+     * Set updated
      *
      * @param \DateTime $lastUpdated
      * @return Addon
      */
-    public function setLastUpdated($lastUpdated)
+    public function setUpdated($updated)
     {
-        $this->last_updated = $lastUpdated;
+        $this->updated = $updated;
 
         return $this;
     }
 
     /**
-     * Get last_updated
+     * Get updated
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
-    public function getLastUpdated()
+    public function getUpdated()
     {
-        return $this->last_updated;
+        return $this->updated;
     }
 }

@@ -16,6 +16,7 @@ class Addon extends Repository {
 	 */
 	protected $filterMap = [
 		[ 'search', 'title', 'LIKE' ],
+		[ 'category', 'category', 'custom' ],
 	];
 
 	/**
@@ -42,4 +43,11 @@ class Addon extends Repository {
 	protected $abilities = [
 		self::UPDATABLE
 	];
+
+	public function filterCategory(QueryBuilder $qb, $value)
+	{
+		$qb->innerJoin('App\ManagerBundle\Entities\Model\Addon\Category', 'c', 'WITH', 'c.addon_id = entity.id');
+		$qb->where('c.category_id = :catID');
+		$qb->setParameter(':catID', $value);
+	}
 }

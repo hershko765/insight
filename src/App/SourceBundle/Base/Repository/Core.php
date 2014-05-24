@@ -120,11 +120,21 @@ abstract class Core extends EntityRepository {
 	 */
 	protected function addSettings(QueryBuilder &$qb, $settings)
 	{
-		if(Arr::get($settings, 'select'))
+		if(Arr::get($settings, 'select') || Arr::get($settings, 'selectBox'))
 		{
+			// If select box chosen, apply selectBox parameters (Not merging in purpose)
+			if (Arr::get($settings, 'selectBox'))
+				$settings['select'] = $settings['selectBox'];
+			
+			// If not array given, trying to convert to array with "," as separator
+			if ( ! is_array($settings['select']))
+				$settings['select'] = explode(',', $settings['select']);
+
+			// Checking if column exists and allowed and adding to query
 			foreach ($settings['select'] as $idx => $select)
 			{
-				if ( ! $this->isColumnExists($select)) continue;
+				if ( ! $this->isColumnExists(trim($select))) continue;
+
 				if($idx === 0) $qb->select('entity.'.$select);
 				else $qb->addSelect('entity.'.$select);
 			}
@@ -169,6 +179,38 @@ abstract class Core extends EntityRepository {
 			return FALSE;
 		}
 		return TRUE;
+	}
+
+	protected function applyIdx(&$results, $idx)
+	{
+		$resultsIdx = [];
+		foreach($results as $result)
+		{
+			if ( ! Arr::get($result, $idx)) break;
+
+			$resultsIdx[$result[$idx]] = $result;
+		}
+
+		$results = $resultsIdx;
+	}
+
+	protected function createSelect(&$results, $selectCols)
+	{
+		// Extract Columns
+		if ( ! is_array($selectCols))
+			$selectCols = explode(',', $selectCols);
+
+		if ( ! Arr::get($selectCols, 1)) return;
+		list($idx, $val) = $selectCols;
+
+		$resultsIdx = [];
+		foreach($results as $result)
+		{
+			if ( ! Arr::get($result, $idx) ||  ! Arr::get($result, $val)) continue;
+			$resultsIdx[$result[$idx]] = $result[$val];
+		}
+
+		$results = $resultsIdx;
 	}
 
 } // End Core

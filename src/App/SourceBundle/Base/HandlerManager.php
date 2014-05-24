@@ -5,6 +5,7 @@ namespace App\SourceBundle\Base;
 use App\SourceBundle\Helpers\Arr;
 use App\SourceBundle\Interfaces\Handler;
 
+
 abstract class HandlerManager implements Handler {
 
 	/**

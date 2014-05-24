@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ManagerBundle\Entities\Handler\Addon;
+namespace App\ManagerBundle\Entities\Handler\Category;
 
 use App\SourceBundle\Base\Repository\Repository;
 use App\SourceBundle\Base\HandlerManager;
@@ -8,7 +8,6 @@ use App\SourceBundle\Interfaces\Handler;
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Validator\Validator;
-use App\SourceBundle\Helpers\Arr;
 
 class Update extends HandlerManager implements Handler {
 
@@ -40,17 +39,19 @@ class Update extends HandlerManager implements Handler {
 	public function execute()
 	{
 		// Get repository and filter data to contain only allowed data
-		$repo = $this->em->getRepository('AppManagerBundle:Model\Addon');
+		$repo = $this->em->getRepository('AppManagerBundle:Model\Category');
+		$repo->convert($this->data, Repository::PERM_UPDATE);
 
 		// Load model by id, throw exception if nothing found
-		$addon = $repo->find($this->id);
-		if ( ! $addon)
-			throw new NotFoundHttpException('Addon not found for id: '.$this->id);
+		$category = $repo->find($this->id);
+		if ( ! $category)
+			throw new NotFoundHttpException('Category not found for id: '.$this->id);
 
-		$repo->hydrate($this->data, $addon, Repository::PERM_CREATE);
+		// Inject values
+		$category->setValues($this->data);
 
 		// Validate model, if errors found return them
-		$errors = $this->validate->validate($addon);
+		$errors = $this->validate->validate($category);
 		if(count($errors) > 0)
 		{
 			return [
@@ -59,18 +60,10 @@ class Update extends HandlerManager implements Handler {
 			];
 		}
 
-		// Add categories if given and if given as array
-		if (is_array(Arr::get($this->data, 'categories')))
-		{
-			$this->handlerGateway->getHandler('Addon:Category', 'Flush', 'manager')
-				->setData($addon, $this->data['categories'])
-				->execute();
-		}
-
 		// Save model into the database and return response
 		return [
 			'status' => TRUE,
-			'data_array' => $repo->save($addon)
+			'data_array' => $repo->save($category)
 		];
 	}
 }

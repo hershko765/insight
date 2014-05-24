@@ -319,7 +319,7 @@ class Arr
             static::setPath($found, $path, static::path($array, $path, $default));
         }
 
-        return $found;
+        return array_filter($found);
     }
 
     /**
