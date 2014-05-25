@@ -1,5 +1,4 @@
 imports:
-    - { resource: parameters.yml }
     - { resource: security.yml }
 
 framework:
@@ -60,12 +59,18 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
         mappings:
-             App:
-                type:       annotation
-                is_bundle:  false
-                dir:        %kernel.root_dir%/../src/App/ManagerBundle/Entities
-                prefix:     App\ManagerBundle\Entities
-                alias:      AppManagerBundle
+          Manager:
+            type:       annotation
+            is_bundle:  false
+            dir:        %kernel.root_dir%/../src/App/ManagerBundle/Entities
+            prefix:     App\ManagerBundle\Entities
+            alias:      AppManagerBundle
+          User:
+             type:       annotation
+             is_bundle:  false
+             dir:        %kernel.root_dir%/../src/App/UserBundle/Entities
+             prefix:     App\UserBundle\Entities
+             alias:      AppUserBundle
 
 # Swiftmailer Configuration
 swiftmailer:

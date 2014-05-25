@@ -1,0 +1,16 @@
+@import "../theme/sass/bootstrap";
+@import "../theme/sass/bootstrap-responsive.min";
+@import "../theme/sass/base-admin-3";
+@import "../theme/sass/base-admin-3-responsive";
+@import "../theme/sass/login";
+@import "../theme/sass/font-awesome";
+
+#navbar-region {
+  a.navbar-brand { padding: 15px 0 0 0; }
+  .navbar-nav > li > a.user-dropdown {
+    min-width: 161px;
+    .diff { float: left }
+  }
+}
+
+.diff { display: none}

@@ -1,0 +1,1 @@
+define(["app","insight_app/login/controller"],function(e,t){var n={};return n.showLogin=function(e){return new t(e)},e.commands.setHandler("show:login",function(e){n.showLogin(e)}),n});

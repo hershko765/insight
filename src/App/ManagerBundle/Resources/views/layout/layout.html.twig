@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block page_title %} Symfony Workstation {% endblock %}</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="/media/compiled/style.css" />
 </head>
 <body>
-{% block content %}{% endblock %}
+<nav id="navbar-region" class="navbar navbar-inverse" role="navigation">{% include "ManagerBundle::Regions/navbar.html.twig" %}</nav>
+<div id="subnavbar-region" class="subnavbar"></div>
+<div id="main-region" class="main">
+    {% block content %}{% endblock %}
+</div>
+<div id="extra-region"></div>
+<div id="footer-region"></div>
 {% block requireJS %}
     {% if app.environment == 'dev' %}
         <script type="text/javascript" src="/media/js/vendor/requirejs/require.js" data-main="/media/js/main.js"></script>

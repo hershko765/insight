@@ -1,0 +1,1 @@
+$(function(){var e=[],t=[];for(var n=0;n<10;n+=.5)e.push([n,Math.sin(n)]),t.push([n,Math.cos(n)]);var r=$.plot($("#line-chart"),[{data:e,label:"sin(x)"},{data:t,label:"cos(x)"}],{series:{lines:{show:!0},points:{show:!0}},grid:{hoverable:!0,clickable:!0},yaxis:{min:-1.1,max:1.1},xaxis:{min:0,max:9},colors:["#F90","#222","#666","#BBB"]})});

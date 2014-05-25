@@ -1,0 +1,1 @@
+define(["app","marionette","./view"],function(e,t,n){var r={};return r=t.Controller.extend({initialize:function(){var t=new n.MainView;e.mainRegion.show(t)}}),r});

@@ -29,11 +29,7 @@ class Addon extends Model
 	protected $id;
 
 	/**
-	 * @ManyToMany(targetEntity="Category")
-	 * @JoinTable(name="addon_categories",
-	 *      joinColumns={@JoinColumn(name="addon_id", referencedColumnName="id")},
-	 *      inverseJoinColumns={@JoinColumn(name="category_id", referencedColumnName="id")}
-	 *      )
+	 * @ORM\OneToMany(targetEntity="App\ManagerBundle\Entities\Model\Category", mappedBy="category_id")
 	 */
 	protected $categories;
 
