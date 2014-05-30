@@ -68,7 +68,9 @@ require([
 	'baseAdmin',
 	'datagrid',
 	'entities/user',
-	'entities/addon'
+	'entities/addon',
+	'insight_app/addon/addon_app',
+	'insight_app/dashboard/dashboard_app'
 ], function(App){
 	// Change underscore template syntax to match twig
 	_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g, evaluate: /\<\@(.+?)\@\>/g };

@@ -60,13 +60,7 @@ class Import extends HandlerManager {
 						}
 					}
 					$addon['categories'] = $addonCategories;
-					$img = $pageHtml->find('a.project-default-image img', 0);
-					if ($img)
-					{
-						echo "<pre>";
-						print_r($img->src);
-						die;
-					}
+
 					$desc = $pageHtml->find('div.content-box-inner', 0)->innertext;
 
 					// Strip all ileagel tags and re create html object
@@ -80,7 +74,19 @@ class Import extends HandlerManager {
 						$addon['title'] = strip_tags($desc->find('h1', 0)->outertext);
 						$desc->find('h1', 0)->outertext = '';
 					}
-
+					$addon['name'] = strtolower(str_replace(' ', '_',$addon['title']));
+					$img = $pageHtml->find('a.project-default-image img', 0);
+					if ($img)
+					{
+						$imgSrc = preg_replace('/\w+x\w+/', '170x140', $img->src);
+						copy(
+							$imgSrc,
+							'./web/media/img/addons/'.$addon['name'].'.jpg'
+						);
+					}
+					else {
+						copy('./web/media/img/noimage.jpg', './web/media/img/addons/'.$addon['name'].'.jpg');
+					}
 					if(Arr::get($created, $addon['title'])) continue;
 
 					$addon['short_desc'] = substr(trim(strip_tags($desc->innertext), ' '), 0, 300);
@@ -114,6 +120,7 @@ class Import extends HandlerManager {
 					$this->getHandler('Addon', 'Create', 'Manager')->setData($addon)->execute();
 					echo "Addon Created ".$addon['title']."\n";
 					$created[$addon['title']] = 1;
+
 				}
 				catch(\ErrorException $e)
 				{

@@ -26,6 +26,7 @@ class Addon extends Repository {
 	protected $tableMap = [
 		'id'            => [ 'varchar',  self::PERM_NONE ],
 		'title'         => [ 'varchar',  self::PERM_ALL  ],
+		'name'          => [ 'varchar',  self::PERM_ALL  ],
 		'description'   => [ 'text',     self::PERM_ALL  ],
 		'short_desc'    => [ 'varchar',  self::PERM_ALL  ],
 		'version'       => [ 'text',     self::PERM_ALL  ],
@@ -34,6 +35,7 @@ class Addon extends Repository {
 		'last_alpha'    => [ 'datetime', self::PERM_ALL  ],
 		'last_release'  => [ 'datetime', self::PERM_ALL  ],
 		'updated'       => [ 'datetime', self::PERM_NONE ],
+		'categories'    => [ 'datetime', self::PERM_ALL ],
 	];
 
 	/**
@@ -47,8 +49,8 @@ class Addon extends Repository {
 
 	public function filterCategory(QueryBuilder $qb, $value)
 	{
-		$qb->innerJoin('App\ManagerBundle\Entities\Model\Addon\Category', 'c', 'WITH', 'c.addon_id = entity.id');
-		$qb->where('c.category_id = :catID');
+		$qb->innerJoin('entity.categories', 'c');
+		$qb->where('c.id = :catID');
 		$qb->setParameter(':catID', $value);
 	}
 }

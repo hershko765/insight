@@ -85,6 +85,13 @@ class Addon extends Model
 
 	/**
 	 * @var string
+	 * @Assert\NotBlank()
+	 * @ORM\Column(type="string", length=200)
+	 */
+	protected $name;
+
+	/**
+	 * @var string
 	 * @ORM\Column(type="text", nullable=TRUE)
 	 */
 	protected $screenshots;
@@ -156,6 +163,29 @@ class Addon extends Model
 	public function getTitle()
 	{
 		return $this->title;
+	}
+
+	/**
+	 * Set name
+	 *
+	 * @param string $name
+	 * @return Addon
+	 */
+	public function setName($name)
+	{
+		$this->name = $name;
+
+		return $this;
+	}
+
+	/**
+	 * Get name
+	 *
+	 * @return string
+	 */
+	public function getName()
+	{
+		return $this->name;
 	}
 
 	/**
@@ -253,6 +283,29 @@ class Addon extends Model
 		return $this->last_alpha;
 	}
 
+	/**
+	 * Set short desc
+	 *
+	 * @param string $short_desc
+	 * @return Addon
+	 */
+	public function setShortDesc($shortdesc)
+	{
+		$this->short_desc = $shortdesc;
+
+		return $this;
+	}
+
+	/**
+	 * Get short desc
+	 *
+	 * @return string
+	 */
+	public function getShortDesc()
+	{
+		return $this->short_desc;
+	}
+	
     /**
      * Set download_link
      *

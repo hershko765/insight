@@ -1,1 +1,0 @@
-define(["app","insight_app/addon/controller"],function(e,t){var n={};return n.showAddon=function(e){return new t(e)},e.commands.setHandler("show:addon",function(e){n.showAddon(e)}),n});

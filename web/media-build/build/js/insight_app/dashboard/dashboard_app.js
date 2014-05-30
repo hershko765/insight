@@ -1,1 +1,0 @@
-define(["app","insight_app/dashboard/controller"],function(e,t){var n={};return n.showDashboard=function(e){return new t(e)},e.commands.setHandler("show:dashboard",function(e){n.showDashboard(e)}),n});

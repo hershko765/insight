@@ -17,6 +17,7 @@ define([
 
 			addonView.on('show', function(){
 				_this.showAddons(addonView);
+				_this.showCategories(addonView);
 			});
 
 			App.mainRegion.show(addonView);
@@ -31,6 +32,15 @@ define([
 			});
 
 			addonView.addonListRegion.show(addonListView);
+		},
+
+		showCategories: function(addonView) {
+			var categoriesView = new AddonView.CategoriesView({});
+
+			categoriesView.on('show', function(){
+				categoriesView.$el.hide().fadeIn();
+			});
+			addonView.categoriesRegion.show(categoriesView);
 		}
 	});
 

@@ -209,4 +209,16 @@ js/config/collection.js
 js/config/model.js
 js/entities/user.js
 js/entities/addon.js
+text!insight_app/addon/templates/layout.twig
+text!insight_app/addon/templates/_row.twig
+text!insight_app/addon/templates/_categories.twig
+js/insight_app/addon/view.js
+js/insight_app/addon/controller.js
+js/insight_app/addon/addon_app.js
+text!insight_app/dashboard/templates/layout.twig
+text!insight_app/dashboard/templates/_stats.twig
+text!insight_app/dashboard/templates/_shortcuts.twig
+js/insight_app/dashboard/view.js
+js/insight_app/dashboard/controller.js
+js/insight_app/dashboard/dashboard_app.js
 js/main.js

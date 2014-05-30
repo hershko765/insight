@@ -7,6 +7,7 @@
 @import "../theme/sass/login";
 @import "../theme/sass/font-awesome";
 
+body { overflow-y: scroll; }
 #navbar-region {
   a.navbar-brand { padding: 15px 0 0 0; }
   .navbar-nav > li > a.user-dropdown {
@@ -14,5 +15,54 @@
     .diff { float: left }
   }
 }
-
+.pre-load { opacity: 0;}
 .diff { display: none}
+
+#categories-region {
+  .shortcuts .shortcut {
+    width: 67px; height: 67px;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 11px 2px #ccc;
+  }
+
+  .druid-avatar {
+    background-image: url(/media/img/categories/druid.png);
+  }
+
+  .warrior-avatar {
+    background-image: url(/media/img/categories/warrior.png);
+  }
+
+  .death-knight-avatar {
+    background-image: url(/media/img/categories/druid.png);
+  }
+
+  .paladin-avatar {
+    background-image: url(/media/img/categories/paladin.png);
+  }
+
+  .mage-avatar {
+    background-image: url(/media/img/categories/mage.png);
+  }
+
+  .warlock-avatar {
+    background-image: url(/media/img/categories/warlock.png);
+  }
+
+  .priest-avatar {
+    background-image: url(/media/img/categories/priest.png);
+  }
+
+  .rogue-avatar {
+    background-image: url(/media/img/categories/rogue.png);
+  }
+
+  .hunter-avatar {
+    background-image: url(/media/img/categories/hunter.png);
+  }
+
+  .shaman-avatar {
+    background-image: url(/media/img/categories/shaman.png);
+  }
+}
