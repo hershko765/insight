@@ -7,9 +7,10 @@ use App\SourceBundle\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use App\ManagerBundle\Entities\Model\Addon;
-use Doctrine\ORM\Mapping\OneToMany;
-use Doctrine\ORM\Mapping\ManyToOne;
+use Doctrine\ORM\Mapping\ManyToMany;
+use Doctrine\ORM\Mapping\JoinTable;
 use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
 
 /**
  * App\ManagerBundle\Entities\Model\Category
@@ -27,6 +28,11 @@ class Category extends Model
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+	/**
+	 * @ManyToMany(targetEntity="Addon")
+	 */
+	protected $addons;
 
 	/**
 	 * @var integer

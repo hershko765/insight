@@ -84,6 +84,10 @@ services:
     handler_gateway:
         class:        App\SourceBundle\Base\HandlerGateway
         arguments: ['@service_container']
+    auth_user:
+        class:        App\UserBundle\Security\Auth
+        arguments: ['@handler_gateway']
+
 sensio_framework_extra:
     view:
         annotations: false

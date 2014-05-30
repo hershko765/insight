@@ -27,6 +27,7 @@ class Addon extends Repository {
 		'id'            => [ 'varchar',  self::PERM_NONE ],
 		'title'         => [ 'varchar',  self::PERM_ALL  ],
 		'description'   => [ 'text',     self::PERM_ALL  ],
+		'short_desc'    => [ 'varchar',  self::PERM_ALL  ],
 		'version'       => [ 'text',     self::PERM_ALL  ],
 		'download_link' => [ 'text',     self::PERM_ALL  ],
 		'screenshots'   => [ 'text',     self::PERM_ALL  ],

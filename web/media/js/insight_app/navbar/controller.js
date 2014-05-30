@@ -12,18 +12,10 @@ define([
 		initialize: function(){
 			var navbarView = new NavbarView.MainView();
 
-			App.vent.on('show:tools', function(){
+			this.listenTo(navbarView, 'show', function(){
 				// Show tools region
 				var toolsView = new NavbarView.ToolsView();
 				navbarView.toolsRegion.show(toolsView);
-
-				// Disable event
-				App.vent.off('show:tools');
-			});
-
-			this.listenTo(navbarView, 'show', function(){
-				// Show tools if user is logged in
-//				App.vent.trigger('show:tools');
 			});
 
 			App.navbarRegion.show(navbarView);

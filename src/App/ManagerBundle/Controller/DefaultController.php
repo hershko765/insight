@@ -1,9 +1,9 @@
 <?php
 
 namespace App\ManagerBundle\Controller;
-
 use App\SourceBundle\Base;
 
+use App\SourceBundle\Helpers\Arr;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FOS\RestBundle\Controller\Annotations;
@@ -23,15 +23,21 @@ use FOS\RestBundle\View\View;
 class DefaultController extends Base\Controller
 {
     /**
-     * @Route("/{name}")
+     * @Route("/")
      * @Template("ManagerBundle:Default:index.html.twig")
      */
-    public function indexAction($name = 'roee')
+    public function indexAction(Request $request)
     {
-	    $handler = $this->getHandler('addon', 'collect')->setFilters(['category' => 2])->execute();
+		$credentials = json_decode($request->cookies->get('user') ?: '{}', TRUE);
+		$user = $this->getHandler('Auth', 'Login', 'User')->setCredentials($credentials)->execute();
+		$user = Arr::get($user, 0);
+	    if ( ! $user)
+		    return $this->redirect('/login');
+		
+		unset($user['password']);
 
 	    return [
-		    'name' => $name,
+		    'user' => $user
 	    ];
     }
 }

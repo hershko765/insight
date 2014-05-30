@@ -29,7 +29,7 @@ class Addon extends Model
 	protected $id;
 
 	/**
-	 * @ORM\OneToMany(targetEntity="App\ManagerBundle\Entities\Model\Category", mappedBy="category_id")
+	 * @ManyToMany(targetEntity="Category")
 	 */
 	protected $categories;
 
@@ -40,6 +40,14 @@ class Addon extends Model
 	 * @ORM\Column(type="text", nullable=TRUE)
 	 */
 	protected $description;
+
+	/**
+	 * @var string
+	 *
+	 * @Assert\NotBlank()
+	 * @ORM\Column(type="string", nullable=TRUE, length=400)
+	 */
+	protected $short_desc;
 
 	/**
 	 * @var string

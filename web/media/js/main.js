@@ -11,6 +11,7 @@ requirejs.config({
 		marionette: 'vendor/backbone.marionette/lib/core/amd/backbone.marionette',
 		jqueryUI: 'vendor/jquery-ui-1.10.0.custom.min',
 		bootstrap: 'vendor/bootstrap.min',
+		datagrid: 'vendor/datagrid/datagrid',
 		baseAdmin: '../theme/js/Application',
 		app: 'app',
 		text: 'vendor/text'
@@ -25,6 +26,9 @@ requirejs.config({
 				'jquery'
 			],
 			exports: 'Backbone'
+		},
+		datagrid: {
+			deps: [ 'marionette' ]
 		},
 		jqueryUI: {
 			deps: [ 'jquery' ]
@@ -61,10 +65,13 @@ require([
 	'jquery',
 	'bootstrap',
 	'jqueryUI',
-	'baseAdmin'
+	'baseAdmin',
+	'datagrid',
+	'entities/user',
+	'entities/addon'
 ], function(App){
 	// Change underscore template syntax to match twig
-	_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g, evaluate: /\{\{=(.+?)\}\}/g };
+	_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g, evaluate: /\<\@(.+?)\@\>/g };
 
 	// Start the app
 	App.start();

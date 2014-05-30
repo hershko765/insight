@@ -12,6 +12,7 @@ define(['app'], function(App){
 
 		// Show Main Menu navbar
 		if ( ! App.subNavbarRegion.currentView) {
+
 			App.execute('show:sub:navbar');
 		}
 

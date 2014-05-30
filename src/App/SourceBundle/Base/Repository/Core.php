@@ -75,7 +75,6 @@ abstract class Core extends EntityRepository {
 				$this->{'filter'.ucwords($filterName)}($qb, $value);
 				continue;
 			}
-
 			if ( ! $this->isAllowedFilter($filterName)) continue;
 			$column   = $filtersIdx[$filterName][1];
 			$operator = $filtersIdx[$filterName][2];

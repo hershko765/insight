@@ -1,10 +1,11 @@
 <?php
-
 namespace App\UserBundle\Entities\Model;
 
 use App\SourceBundle\Base\Model;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use Serializable;
 use App\SourceBundle\Base\Collection;
 use Doctrine\ORM\Mapping\ManyToMany;
 use Doctrine\ORM\Mapping\JoinTable;
@@ -18,7 +19,7 @@ use Doctrine\ORM\Mapping\ManyToOne;
  * @ORM\HasLifecycleCallbacks
  * @ORM\Entity(repositoryClass="App\UserBundle\Entities\Repository\User")
  */
-class User extends Model
+class User extends Model implements UserInterface, Serializable
 {
     /**
      * @var integer
@@ -88,8 +89,26 @@ class User extends Model
 	 */
 	protected $created;
 
+	/**
+	 * @var bool
+	 * @ORM\Column(name="is_active", type="boolean")
+	 */
+	protected  $isActive;
 
-    /**
+	/**
+	 * @inheritDoc
+	 */
+	public function eraseCredentials() {}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getRoles()
+	{
+		return array('ROLE_USER');
+	}
+
+	/**
      * Get id
      *
      * @return integer 
@@ -98,6 +117,42 @@ class User extends Model
     {
         return $this->id;
     }
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getSalt()
+	{
+		return null;
+	}
+
+	/**
+	 * @see \Serializable::serialize()
+	 */
+	public function serialize()
+	{
+		return serialize(array(
+				$this->id,
+				$this->username,
+				$this->password,
+				// see section on salt below
+				// $this->salt,
+			));
+	}
+
+	/**
+	 * @see \Serializable::unserialize()
+	 */
+	public function unserialize($serialized)
+	{
+		list (
+			$this->id,
+			$this->username,
+			$this->password,
+			// see section on salt below
+			// $this->salt
+			) = unserialize($serialized);
+	}
 
     /**
      * Set full_name

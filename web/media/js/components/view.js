@@ -9,10 +9,9 @@ define(['app', 'marionette'], function(App, Marionette){
 			this.templateHelpers = function() {
 				return $.extend(
 					helpers, {
-					user: {
-						'username': 'roee123',
-						'full_name': 'Roee Hershko'
-					}
+					userInfo: (function(){
+						return App.request('get:active:user')
+					}())
 				});
 			}
 		}

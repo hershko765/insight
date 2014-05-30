@@ -7,7 +7,7 @@ define([
 		routes: {
 			'': 'showDashboard',
 			'dashboard': 'showDashboard',
-			'login': 'showLogin'
+			'addons': 'showAddons'
 		},
 		showDashboard: function(){
 			regionManager.showAll();
@@ -15,17 +15,20 @@ define([
 				App.execute('show:dashboard');
 			});
 		},
-		showLogin: function(){
-			regionManager.hideSubNavbar();
-			require(['insight_app/login/login_app'],function(){
-				App.execute('show:login');
+		showAddons: function(){
+			regionManager.showAll();
+			require(['insight_app/addon/addon_app'],function(){
+				App.execute('show:addon');
 			});
 		}
 	});
 
+	
 	App.addInitializer(function () {
 		App.Routes = new Routes({});
 
+
+		App.Routes.on('route', function(route, params){ });
 	});
 	
 	App.on('initialize:after', function () {

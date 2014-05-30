@@ -30,12 +30,12 @@ class Import extends HandlerManager {
 			->setSettings(['selectBox' => ['name', 'id']])
 			->execute();
 
-		for($i = 1; $i <= 78; $i++)
+		for($i = 2; $i <= 78; $i++)
 		{
 			$pageHtml = file_get_contents('http://www.wowace.com/addons/?page='.$i);
 			preg_match_all('/<h2><a href="\/addons\/(.*)\/">(.*)<\/a><\/h2>/', $pageHtml, $match);
 			$merged = array_combine($match[1], $match[2]);
-
+			
 			$addon = [];
 			$created = [];
 			foreach($merged as $url => $title)
@@ -60,6 +60,13 @@ class Import extends HandlerManager {
 						}
 					}
 					$addon['categories'] = $addonCategories;
+					$img = $pageHtml->find('a.project-default-image img', 0);
+					if ($img)
+					{
+						echo "<pre>";
+						print_r($img->src);
+						die;
+					}
 					$desc = $pageHtml->find('div.content-box-inner', 0)->innertext;
 
 					// Strip all ileagel tags and re create html object
@@ -76,6 +83,7 @@ class Import extends HandlerManager {
 
 					if(Arr::get($created, $addon['title'])) continue;
 
+					$addon['short_desc'] = substr(trim(strip_tags($desc->innertext), ' '), 0, 300);
 					$addon['description'] = $desc->innertext;
 					unset($pageHtml, $desc);
 

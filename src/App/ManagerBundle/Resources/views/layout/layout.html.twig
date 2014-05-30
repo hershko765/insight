@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>{% block page_title %} Symfony Workstation {% endblock %}</title>
+    <title>{% block page_title %} Insight Project - Addon Manager {% endblock %}</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
     <link rel="stylesheet" href="/media/compiled/style.css" />
 </head>
@@ -22,5 +22,6 @@
     {% endif %}
 {% endblock %}
 {% block scripts %}{% endblock %}
+{% include "ManagerBundle::Default/headerJS.html.twig" %}
 </body>
 </html>

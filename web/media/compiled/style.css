@@ -12235,6 +12235,290 @@ upgrading in the future easier. ***
 }
 /*------------------------------------------------------------------
 
+[Dashboard Stylesheet]
+
+	Project:		Base Admin
+	Version:		1.0
+	Last change:	05/21/2012
+	Assigned to:	Rod Howard (rh)
+
+
+
+[Table of contents]
+
+	1. Shortcuts
+	2. Stats
+	3. Task List
+	4. News Item
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[2. Stats / .stats]
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000331}}
+.stats {
+  width: 100%;
+  display: table;
+  padding: 0 0 0 10px;
+  margin-top: .5em;
+  margin-bottom: 1.9em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000339}}
+.stats .stat {
+  display: table-cell;
+  width: 40%;
+  vertical-align: top;
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000349}}
+.stat-value {
+  display: block;
+  margin-bottom: .55em;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000359}}
+.stat-time {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000364}}
+.stat-time .stat-value {
+  color: #F90;
+  font-size: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000369}}
+.stats #donut-chart {
+  height: 100px;
+  margin-left: -20px;
+}
+
+/*------------------------------------------------------------------
+[3. News Item / .news-items]
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000382}}
+.news-items {
+  padding: 0;
+  margin: 1em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000387}}
+.news-items li {
+  display: table;
+  padding: 0 2em 0 1.5em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #CCC;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000396}}
+.news-items li:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\0000398}}
+.news-item-date {
+  display: table-cell;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003102}}
+.news-item-detail {
+  display: table-cell;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003106}}
+.news-item-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003111}}
+.news-item-date {
+  width: 75px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003118}}
+.news-item-day {
+  display: block;
+  margin-bottom: .25em;
+  font-size: 24px;
+  color: #888;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003126}}
+.news-item-preview {
+  margin-bottom: 0;
+  color: #777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003132}}
+.news-item-month {
+  display: block;
+  padding-right: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
+/*------------------------------------------------------------------
+[4. Action Table / .action-table]
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003147}}
+.action-table .btn-small {
+  padding: 4px 5px 5px;
+  font-size: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003153}}
+.action-table .td-actions {
+  width: 80px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003159}}
+.action-table .td-actions .btn {
+  margin-right: .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003163}}
+.action-table .td-actions .btn:last-child {
+  margin-rigth: 0;
+}
+
+@media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003180}}
+  .stats .stat {
+    margin-bottom: 3em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003185}}
+  .stats .stat .stat-value {
+    margin-bottom: .15em;
+    font-size: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003191}}
+  .stats {
+    float: left;
+    display: block;
+    margin-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/dashboard\.scss}line{font-family:\00003199}}
+  #chart-stats {
+    margin: 2em 0 1em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\000034}}
+#big_stats {
+  width: 100%;
+  display: table;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000312}}
+.big-stats-container .widget-content {
+  background: #E9E9E9;
+  background: -moz-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #e9e9e9));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000325}}
+#big_stats .stat {
+  width: 25%;
+  height: 90px;
+  text-align: center;
+  display: table-cell;
+  padding: 0;
+  position: relative;
+  border-right: 1px solid #CCC;
+  border-left: 1px solid #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000337}}
+#big_stats .stat:first-child {
+  border-left: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000341}}
+#big_stats .stat:last-child {
+  border-right: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000346}}
+#big_stats .stat h4 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000354}}
+#big_stats .stat .value {
+  font-size: 56px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1em;
+}
+
+@media all and (max-width: 950px) and (min-width: 1px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000365}}
+  #big_stats {
+    display: block;
+    margin-bottom: -40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000370}}
+  #big_stats .stat {
+    width: 49%;
+    display: block;
+    margin-bottom: 3em;
+    float: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000377}}
+  #big_stats .stat:nth-child(2) {
+    border-right: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000381}}
+  #big_stats .stat:nth-child(3) {
+    border-left: none;
+  }
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/theme\/sass\/reports\.scss}line{font-family:\0000388}}
+  #big_stats .stat .value {
+    font-size: 40px;
+  }
+}
+/*------------------------------------------------------------------
+
 [Login/Signup Stylesheet]
 
 	Project:		Base Admin
@@ -14811,20 +15095,20 @@ a .icon-flip-vertical:before {
   content: "\f18b";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000311}}
 #navbar-region a.navbar-brand {
   padding: 15px 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000312}}
 #navbar-region .navbar-nav > li > a.user-dropdown {
   min-width: 161px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000314}}
 #navbar-region .navbar-nav > li > a.user-dropdown .diff {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000318}}
 .diff {
   display: none;
 }

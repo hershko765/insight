@@ -1,21 +1,19 @@
 /**
  * Initialize App
  */
-define(['backbone', 'marionette', 'jquery', 'components/animatedRegion'], function(Backbone, Marionette, $, animatedRegion){
+define([
+	'backbone',
+	'marionette',
+	'jquery'
+], function(Backbone, Marionette, $){
 	// Initialize App
 	var App = new Marionette.Application();
 	// Add top level regions
 	App.addRegions({
 		navbarRegion: '#navbar-region',
 		mainRegion: '#main-region',
-		footerRegion: '#footer-region'
-	});
-
-	App.subNavbarRegion = new animatedRegion();
-
-	App.subNavbarRegion.on('show', function(view){
-		view.$el.hide();
-		view.$el.slideDown();
+		footerRegion: '#footer-region',
+		subNavbarRegion: '#subnavbar-region'
 	});
 
 	return App;

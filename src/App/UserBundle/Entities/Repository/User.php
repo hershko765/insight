@@ -2,6 +2,8 @@
 namespace App\UserBundle\Entities\Repository;
 
 use App\SourceBundle\Base\Repository\Repository;
+use App\SourceBundle\Helpers\Arr;
+use Doctrine\ORM\QueryBuilder;
 
 class User extends Repository {
 
@@ -15,6 +17,7 @@ class User extends Repository {
 	 */
 	protected $filterMap = [
 		[ 'search', 'full_name', 'LIKE' ],
+		[ 'login', 'custom', 'custom' ],
 	];
 
 	/**
@@ -43,4 +46,11 @@ class User extends Repository {
 		self::UPDATABLE,
 		self::CREATABLE,
 	];
+
+	public function filterLogin(QueryBuilder $qb, $value)
+	{
+		$qb->andWhere('entity.username = :username');
+
+		$qb->setParameter('username', Arr::get($value, 'username'));
+	}
 }
