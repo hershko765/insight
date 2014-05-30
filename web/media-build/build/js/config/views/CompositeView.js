@@ -1,0 +1,1 @@
+define(["app","backboneBabysitter"],function(e){var t=Marionette.CompositeView.extend({initialize:function(){this.onCompositeCollectionRendered=function(){var e=this,t=new Backbone.ChildViewContainer;this.children.each(function(e){t.add(e,e.model.get("id"))}),this.childViews=t,this.onAfterCollectionRender()}}});return t});

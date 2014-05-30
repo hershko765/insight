@@ -1,1 +1,1 @@
-define(["app","marionette","./view"],function(e,t,n){var r={};return r=t.Controller.extend({initialize:function(){var t=new n.MainView;e.mainRegion.show(t)}}),r});
+define(["app","marionette","./view"],function(e,t,n){var r;return r=t.Controller.extend({initialize:function(){var t=this,r=new n.MainView;r.on("show",function(){t.showStats(r),t.showShortcuts(r)}),e.mainRegion.show(r)},showStats:function(e){var t=new n.StatsView({});e.statsRegion.show(t)},showShortcuts:function(e){var t=new n.ShortcutsView({});e.shortcutsRegion.show(t)}}),r});

@@ -1,0 +1,1 @@
+define(["app","marionette","components/view","text!./templates/layout.twig","text!./templates/_row.twig"],function(e,t,n,r,i){var s={};return s.MainView=n.Layout.extend({template:r,regions:{addonListRegion:"#addons-list"}}),s.RowView=n.ItemView.extend({template:i}),s.AddonsListView=n.CollectionView.extend({itemView:s.RowView}),s});

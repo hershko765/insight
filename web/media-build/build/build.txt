@@ -179,7 +179,6 @@ js/vendor/backbone/backbone.js
 js/vendor/backbone.babysitter/lib/backbone.babysitter.js
 js/vendor/backbone.wreqr/lib/backbone.wreqr.js
 js/vendor/backbone.marionette/lib/core/amd/backbone.marionette.js
-js/components/animatedRegion.js
 js/app.js
 js/insight_app/regionManager.js
 js/insight_app/routes.js
@@ -197,4 +196,17 @@ js/insight_app/subnavbar/subnavbar_app.js
 js/vendor/bootstrap.min.js
 js/vendor/jquery-ui-1.10.0.custom.min.js
 theme/js/Application.js
+text!vendor/datagrid/templates/layout.twig
+text!vendor/datagrid/templates/_table.twig
+text!vendor/datagrid/templates/_raw.twig
+js/vendor/datagrid/datagridView.js
+js/vendor/datagrid/tplVars.js
+js/vendor/datagrid/mergeRecursive.js
+js/vendor/datagrid/datagridEntity.js
+js/vendor/datagrid/config.js
+js/vendor/datagrid/datagrid.js
+js/config/collection.js
+js/config/model.js
+js/entities/user.js
+js/entities/addon.js
 js/main.js

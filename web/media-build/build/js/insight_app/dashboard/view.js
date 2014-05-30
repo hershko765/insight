@@ -1,1 +1,1 @@
-define(["app","marionette","components/view","text!./templates/layout.twig"],function(e,t,n,r){var i={};return i.MainView=n.Layout.extend({template:r}),i});
+define(["app","marionette","components/view","text!./templates/layout.twig","text!./templates/_stats.twig","text!./templates/_shortcuts.twig"],function(e,t,n,r,i,s){var o={};return o.MainView=n.Layout.extend({template:r,regions:{statsRegion:"#stats-region",shortcutsRegion:"#shortcuts-region"}}),o.StatsView=n.ItemView.extend({template:i}),o.ShortcutsView=n.ItemView.extend({template:s}),o});

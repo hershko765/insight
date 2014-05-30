@@ -1,0 +1,1 @@
+define(["app"],function(e){var t=Marionette.CollectionView.extend({initialize:function(){this.onRender=function(e){var t=new Backbone.ChildViewContainer;this.children.each(function(n){t.add(n,n.model.get(e.viewIndex))}),this.childViews=t}}});return t});
