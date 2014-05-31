@@ -54,25 +54,25 @@ class Filters {
 
 	private function filterEqual($params)
 	{
-		$this->qb->where("entity.".$params['column'].' = :'.$params['filterName']);
+		$this->qb->andWhere("entity.".$params['column'].' = :'.$params['filterName']);
 		$this->qb->setParameter($params['filterName'], $params['value']);
 	}
 
 	private function filterLike($params)
 	{
-		$this->qb->where("entity.".$params['column'].' LIKE :'.$params['filterName']);
+		$this->qb->andWhere("entity.".$params['column'].' LIKE :'.$params['filterName']);
 		$this->qb->setParameter($params['filterName'], '%'.$params['value'].'%');
 	}
 
 	private function filterBigger($params)
 	{
-		$this->qb->where("entity.".$params['column'].' > :'.$params['filterName']);
+		$this->qb->andWhere("entity.".$params['column'].' > :'.$params['filterName']);
 		$this->qb->setParameter($params['filterName'], $params['value']);
 	}
 
 	private function filterSmaller($params)
 	{
-		$this->qb->where("entity.".$params['column'].' > :'.$params['filterName']);
+		$this->qb->andWhere("entity.".$params['column'].' > :'.$params['filterName']);
 		$this->qb->setParameter($params['filterName'], $params['value']);
 	}
 
@@ -85,7 +85,7 @@ class Filters {
 		if ( ! Arr::get($range, 0) || ! Arr::get($range, 1))
 			throw new Exception('Between filter excpet array with 2 values');
 
-		$this->qb->where("entity.".$params['column'].' BETWEEN :'.$param_1.' AND :'.$param_2);
+		$this->qb->andWhere("entity.".$params['column'].' BETWEEN :'.$param_1.' AND :'.$param_2);
 		$this->qb->setParameter($param_1, $range[0]);
 		$this->qb->setParameter($param_2, $range[1]);
 	}

@@ -211,8 +211,9 @@ js/entities/user.js
 js/entities/addon.js
 text!insight_app/addon/templates/layout.twig
 text!insight_app/addon/templates/_row.twig
-text!insight_app/addon/templates/_categories.twig
+text!insight_app/addon/templates/_filters.twig
 js/insight_app/addon/view.js
+js/components/filter.js
 js/insight_app/addon/controller.js
 js/insight_app/addon/addon_app.js
 text!insight_app/dashboard/templates/layout.twig

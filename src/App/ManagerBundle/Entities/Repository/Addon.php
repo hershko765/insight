@@ -50,7 +50,7 @@ class Addon extends Repository {
 	public function filterCategory(QueryBuilder $qb, $value)
 	{
 		$qb->innerJoin('entity.categories', 'c');
-		$qb->where('c.id = :catID');
-		$qb->setParameter(':catID', $value);
+		$qb->andWhere('c.id = :catID');
+		$qb->setParameter('catID', $value);
 	}
 }

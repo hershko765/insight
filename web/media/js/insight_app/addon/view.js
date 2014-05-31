@@ -7,7 +7,7 @@ define([
 	'components/view',
 	'text!./templates/layout.twig',
 	'text!./templates/_row.twig',
-	'text!./templates/_categories.twig'
+	'text!./templates/_filters.twig'
 ], function(App, Marionette, View, tplLayout, tplRow, TplCats){
 
 	var AddonView = {};
@@ -16,7 +16,7 @@ define([
 		template: tplLayout,
 		regions: {
 			addonListRegion: '#addons-list',
-			categoriesRegion: '#categories-region'
+			filtersRegion: '#categories-region'
 		}
 	});
 
@@ -31,15 +31,36 @@ define([
 		itemView: AddonView.RowView
 	});
 
-	AddonView.CategoriesView = View.Layout.extend({
+	AddonView.FiltersView = View.Layout.extend({
 		template: TplCats,
 		events: {
 			'click a': function(e) {
-				this.$el.find('.avatar-selected').removeClass('avatar-selected');
-				var catID = $(e.currentTarget).addClass('avatar-selected').data('category');
-				this.trigger('filter:category', catID);
+				var removeFilter, catID,
+					$target = $(e.currentTarget);
+
+				if ($target.hasClass('avatar-selected')) {
+					removeFilter = true;
+					$target.removeClass('avatar-selected');
+				} else {
+					this.$el.find('.avatar-selected').removeClass('avatar-selected');
+					catID = $target.addClass('avatar-selected').data('category');
+				}
+				
+				this.trigger('filter:category', removeFilter ? null : catID);
 				e.preventDefault();
-			}
+			},
+			'textInput #search': 'filterSearch',
+			'change #search': 'filterSearch',
+			'paste #search': 'filterSearch',
+			'input #search': 'filterSearch'
+		},
+		filterSearch: function(e) {
+			var _this = this;
+			if (this.delaySearch) { clearTimeout(_this.delaySearch); }
+			this.delaySearch = setTimeout(function(){
+				_this.delaySearch = false;
+				_this.trigger('filter:search', $(e.currentTarget).val());
+			}, 500);
 		},
 		onShow: function() {
 			App.imageLoader(this.$el);

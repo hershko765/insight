@@ -5,8 +5,9 @@ define([
 	'app',
 	'marionette',
 	'./view',
-	'datagrid'
-], function(App, Marionette, AddonView){
+	'datagrid',
+	'components/filter'
+], function(App, Marionette, AddonView, dg, FilterManager){
 	var navbarController;
 
 	navbarController = Marionette.Controller.extend({
@@ -17,11 +18,12 @@ define([
 
 			addonView.on('show', function(){
 				_this.showAddons(addonView);
-				_this.showCategories(addonView);
+				_this.showFilters(addonView);
 			});
 
 			App.mainRegion.show(addonView);
 		},
+
 		showAddons: function(addonView) {
 			var addonListView = new AddonView.AddonsListView({
 				collection: new Backbone.Collection()
@@ -34,21 +36,32 @@ define([
 			addonView.addonListRegion.show(addonListView);
 		},
 
-		showCategories: function(addonView) {
-			var categoriesView = new AddonView.CategoriesView({});
+		showFilters: function(addonView) {
+			var filtersView = new AddonView.FiltersView({}),
+				filterManager = new FilterManager();
+			filterManager.add('limit', 7);
 
-			categoriesView.on('show', function(){
-				categoriesView.$el.hide().fadeIn();
+			filtersView.on('show', function(){
+				filtersView.$el.hide().fadeIn();
 			});
 
-			this.listenTo(categoriesView, 'filter:category', function(catID){
+			this.listenTo(filtersView, 'filter:category', function(catID){
 				var _this = this;
-				App.execute('get:addon:entities', { category: catID, limit: 7 }, function(collection){
+				filterManager.add('category', catID);
+				App.execute('get:addon:entities', filterManager.getAll(), function(collection){
 					_this.addonListView.collection.reset(collection.toJSON());
 				});
 			});
 
-			addonView.categoriesRegion.show(categoriesView);
+			this.listenTo(filtersView, 'filter:search', function(search){
+				var _this = this;
+				filterManager.add('search', search);
+				App.execute('get:addon:entities', filterManager.getAll(), function(collection){
+					_this.addonListView.collection.reset(collection.toJSON());
+				});
+			});
+
+			addonView.filtersRegion.show(filtersView);
 		}
 	});
 
