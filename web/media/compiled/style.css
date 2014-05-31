@@ -15324,43 +15324,56 @@ body {
   border: none;
   box-shadow: 0 0 11px 2px #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000328}}
+#categories-region .shortcuts .shortcut.avatar-selected {
+  box-shadow: 0 0 4px 1px rgba(255, 156, 0, 0.9);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000331}}
 #categories-region .druid-avatar {
   background-image: url(/media/img/categories/druid.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000335}}
 #categories-region .warrior-avatar {
   background-image: url(/media/img/categories/warrior.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000339}}
 #categories-region .death-knight-avatar {
-  background-image: url(/media/img/categories/druid.png);
+  background-image: url(/media/img/categories/death-knight.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000343}}
 #categories-region .paladin-avatar {
   background-image: url(/media/img/categories/paladin.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000347}}
 #categories-region .mage-avatar {
   background-image: url(/media/img/categories/mage.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000351}}
 #categories-region .warlock-avatar {
   background-image: url(/media/img/categories/warlock.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000355}}
 #categories-region .priest-avatar {
   background-image: url(/media/img/categories/priest.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000359}}
 #categories-region .rogue-avatar {
   background-image: url(/media/img/categories/rogue.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000363}}
 #categories-region .hunter-avatar {
   background-image: url(/media/img/categories/hunter.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000367}}
 #categories-region .shaman-avatar {
   background-image: url(/media/img/categories/shaman.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/Insight\/web\/media\/sass\/style\.scss}line{font-family:\0000372}}
+.addon-thumbnail {
+  width: 100%;
+  height: 140px;
+  background-size: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.7);
 }

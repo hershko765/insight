@@ -27,10 +27,10 @@ define([
 				collection: new Backbone.Collection()
 			});
 
-			App.execute('get:addon:entities', { limit: 20 }, function(collection){
+			App.execute('get:addon:entities', { limit: 7 }, function(collection){
 				addonListView.collection.reset(collection.toJSON());
 			});
-
+			this.addonListView = addonListView;
 			addonView.addonListRegion.show(addonListView);
 		},
 
@@ -40,6 +40,14 @@ define([
 			categoriesView.on('show', function(){
 				categoriesView.$el.hide().fadeIn();
 			});
+
+			this.listenTo(categoriesView, 'filter:category', function(catID){
+				var _this = this;
+				App.execute('get:addon:entities', { category: catID, limit: 7 }, function(collection){
+					_this.addonListView.collection.reset(collection.toJSON());
+				});
+			});
+
 			addonView.categoriesRegion.show(categoriesView);
 		}
 	});
